@@ -8,18 +8,35 @@ body {
 }
 
 header {
-  background: #111827;
-  padding: 60px 20px;
+  /* This creates a deep blue glow effect */
+  background: radial-gradient(circle at top right, #1e293b, #0b1020);
+  padding: 100px 20px; 
   text-align: center;
   border-bottom: 2px solid #1f2937;
+  position: relative;
+  overflow: hidden;
 }
 
-h1 {
+/* This adds the "Cyber Grid" lines over the background */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    linear-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+}
+
+header h1 {
   margin: 0;
-  font-size: 2.5rem;
-  color: #00e5ff; /* Cyan brand color */
+  font-size: 3.5rem; 
+  color: #00e5ff; /* That bright cyan color */
+  text-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+  position: relative;
+  z-index: 1;
 }
-
 main {
   padding: 40px 20px;
   max-width: 900px;
