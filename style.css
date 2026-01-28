@@ -1,12 +1,50 @@
+/* Light & Clean Theme */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif; /* Modernized font */
-  margin: 0;
-  padding: 0;
-  background: #0b1020;
-  color: #ffffff;
-  line-height: 1.6;
+    background-color: #ffffff; /* Pure white background */
+    color: #1f2937; /* Dark gray text for readability */
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-header {
+
+/* Updated Navigation for White Background */
+nav {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px 0;
+}
+
+.logo {
+    color: #111827; /* Dark logo */
+}
+
+nav a {
+    color: #4b5563;
+}
+
+/* Feature Card Styling */
+.feature-item {
+    background: #f9fafb; /* Very light gray card */
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.feature-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 229, 255, 0.1);
+    border-color: #00e5ff;
+}
+
+/* High-Quality Image Styling */
+.card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}header {
   /* This creates a deep blue glow effect */
   background: radial-gradient(circle at top right, #1e293b, #0b1020);
   padding: 100px 20px; 
