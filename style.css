@@ -1,141 +1,42 @@
+
+}/* Professional Enterprise Theme */
+body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
 header {
-  /* This creates a deep blue glow effect */
-  background: radial-gradient(circle at top right, #1e293b, #0b1020);
-  padding: 100px 20px; 
-  text-align: center;
-  border-bottom: 2px solid #1f2937;
-  position: relative;
-  overflow: hidden;
+    background: #f9fafb;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
 }
-/* This adds the "Cyber Grid" lines over the background */
-header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: 
-    linear-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
-  background-size: 30px 30px;
-  pointer-events: none;
-}
+
 header h1 {
-  margin: 0;
-  font-size: 3.5rem; 
-  color: #00e5ff; /* That bright cyan color */
-  text-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
-  position: relative;
-  z-index: 1;
+    color: #0066ff !important; /* Professional Blue */
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
-main {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-section {
-  margin-bottom: 60px;
-}
-h2 {
-  border-left: 4px solid #00e5ff;
-  padding-left: 15px;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-}
-/* --- Professional Pricing Card Styling --- */
-.pricing-card {
-  background: #161e2d;
-  border: 1px solid #1f2937;
-  border-radius: 12px;
-  padding: 40px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  margin-top: 20px;
-}
-.pricing-card h3 {
-  margin-top: 0;
-  color: #00e5ff;
-  font-size: 1.5rem;
-}
-.pricing-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 30px 0;
-  text-align: left;
-  display: inline-block; /* Centers the list items */
-}
-.pricing-card li {
-  margin-bottom: 10px;
-  padding-left: 25px;
-  position: relative;
-}
-/* Adding a checkmark to the list items */
-.pricing-card li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #00e5ff;
-  font-weight: bold;
-}
-/* Footer Styling */
-footer {
-  background: #111827;
-  text-align: center;
-  padding: 40px 20px;
-  font-size: 0.9rem;
-  color: #9ca3af;
-  border-top: 1px solid #1f2937;
-}
-/* Keeping your button class for backward compatibility */
-.payment-button {
-    background-color: #00e5ff;
-    color: #000;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-    transition: 0.3s;
-}
-.payment-button:hover {
-    box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
-    transform: scale(1.02);
-}
-/* Navigation Bar Styling */
+
 nav {
-  background: rgba(17, 24, 39, 0.9); /* Dark semi-transparent background */
-  backdrop-filter: blur(10px); /* Modern blur effect */
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid #1f2937;
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px 0;
 }
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+
+.logo {
+    color: #111827 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-nav a {
-  text-decoration: none;
-  color: #9ca3af;
-  font-weight: 500;
-  transition: 0.3s;
-}
-nav a:hover {
-  color: #00e5ff; /* Cyan glow on hover */
-}
-/* Call to Action Button in Nav */
-.nav-cta {
-  background: #00e5ff;
-  color: #000 !important;
-  padding: 8px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-.services-container {
+
+.nav-container a {
+    color: #374151 !important;
+    text-decoration: none;
+    font-weight: 500;
+}.services-container {
   display: flex;
   justify-content: space-around;
   gap: 20px;
