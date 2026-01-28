@@ -121,3 +121,11 @@ footer {
     background-color: #00b8cc;
     transform: translateY(-2px);
 }
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="platform.html">Platform</a></li>
+    <li><a href="compliance.html">Compliance</a></li>
+    <li><a href="pricing.html" class="nav-cta">Get Started</a></li>
+  </ul>
+</nav>
