@@ -1,91 +1,124 @@
-/* Professional Trust Theme */
+/* Fortune 300 Dark Theme */
 body {
-    background-color: #ffffff;
-    color: #1f2937;
+    background-color: #030712 !important; /* Deep Midnight */
+    color: #f9fafb !important;
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
 
+/* Glass-morphism Navigation */
 nav {
-    display: flex;
-    justify-content: center;
-    background: #ffffff;
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1f2937;
     padding: 20px 0;
-    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-container {
-    width: 90%;
     max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: #111827;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
+    letter-spacing: -1px;
+    color: #ffffff;
 }
 
 nav a {
+    color: #9ca3af;
     text-decoration: none;
-    color: #4b5563;
     font-weight: 500;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    color: #38bdf8; /* Precision Blue */
+}
+
+/* Hero Section */
 header {
     text-align: center;
-    padding: 80px 20px;
-    background: #f9fafb;
+    padding: 100px 20px;
+    background: radial-gradient(circle at top, #1e293b 0%, #030712 100%);
 }
 
 header h1 {
-    color: #003366; /* Deep Navy Blue */
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    background: linear-gradient(to right, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
 }
 
-/* The Grid System */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Enterprise Pricing Container */
+.pricing-grid {
+    display: flex;
+    justify-content: center;
     padding: 60px 20px;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.feature-item {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-.feature-item h3 {
-    color: #003366; /* Deep Navy Blue */
-    margin-top: 15px;
-}
-
-.feature-item p {
-    color: #4b5563;
-    line-height: 1.6;
-}
-
-.card-image {
+.pricing-card {
+    background: #111827; /* Dark Container */
+    border: 1px solid #374151;
+    border-radius: 24px;
+    padding: 40px;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #38bdf8;
+    margin: 20px 0;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.feature-list li {
+    padding: 12px 0;
+    color: #9ca3af;
+    border-bottom: 1px solid #1f2937;
+}
+
+/* Precision Action Button */
+.cta-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    background: #38bdf8;
+    color: #030712;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
 }
