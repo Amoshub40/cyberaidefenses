@@ -6,7 +6,6 @@ body {
   color: #ffffff;
   line-height: 1.6;
 }
-
 header {
   /* This creates a deep blue glow effect */
   background: radial-gradient(circle at top right, #1e293b, #0b1020);
@@ -16,7 +15,6 @@ header {
   position: relative;
   overflow: hidden;
 }
-
 /* This adds the "Cyber Grid" lines over the background */
 header::before {
   content: "";
@@ -28,7 +26,6 @@ header::before {
   background-size: 30px 30px;
   pointer-events: none;
 }
-
 header h1 {
   margin: 0;
   font-size: 3.5rem; 
@@ -42,18 +39,15 @@ main {
   max-width: 900px;
   margin: auto;
 }
-
 section {
   margin-bottom: 60px;
 }
-
 h2 {
   border-left: 4px solid #00e5ff;
   padding-left: 15px;
   margin-bottom: 20px;
   font-size: 1.8rem;
 }
-
 /* --- Professional Pricing Card Styling --- */
 .pricing-card {
   background: #161e2d;
@@ -64,13 +58,11 @@ h2 {
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   margin-top: 20px;
 }
-
 .pricing-card h3 {
   margin-top: 0;
   color: #00e5ff;
   font-size: 1.5rem;
 }
-
 .pricing-card ul {
   list-style: none;
   padding: 0;
@@ -78,13 +70,11 @@ h2 {
   text-align: left;
   display: inline-block; /* Centers the list items */
 }
-
 .pricing-card li {
   margin-bottom: 10px;
   padding-left: 25px;
   position: relative;
 }
-
 /* Adding a checkmark to the list items */
 .pricing-card li::before {
   content: '✓';
@@ -93,7 +83,6 @@ h2 {
   color: #00e5ff;
   font-weight: bold;
 }
-
 /* Footer Styling */
 footer {
   background: #111827;
@@ -103,7 +92,6 @@ footer {
   color: #9ca3af;
   border-top: 1px solid #1f2937;
 }
-
 /* Keeping your button class for backward compatibility */
 .payment-button {
     background-color: #00e5ff;
@@ -129,7 +117,6 @@ nav {
   z-index: 1000;
   border-bottom: 1px solid #1f2937;
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -138,18 +125,15 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
 nav a {
   text-decoration: none;
   color: #9ca3af;
   font-weight: 500;
   transition: 0.3s;
 }
-
 nav a:hover {
   color: #00e5ff; /* Cyan glow on hover */
 }
-
 /* Call to Action Button in Nav */
 .nav-cta {
   background: #00e5ff;
