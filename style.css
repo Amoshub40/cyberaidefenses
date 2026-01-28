@@ -105,9 +105,10 @@ footer {
     transition: 0.3s;
 }
 .payment-button:hover {
-    background-color: #00b8cc;
-    transform: translateY(-2px);
-}/* Navigation Bar Styling */
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+    transform: scale(1.02);
+}
+/* Navigation Bar Styling */
 nav {
   background: rgba(17, 24, 39, 0.9); /* Dark semi-transparent background */
   backdrop-filter: blur(10px); /* Modern blur effect */
