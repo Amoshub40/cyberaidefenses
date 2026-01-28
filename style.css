@@ -143,3 +143,32 @@ nav a:hover {
   border-radius: 5px;
   font-weight: bold;
 }
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap; /* Helps with mobile viewing */
+  padding: 40px 20px;
+}
+.service-card {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 30px;
+  flex: 1;
+  min-width: 300px;
+  transition: 0.3s;
+}
+.service-card:hover {
+  border-color: #00e5ff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+}
+.service-card h3 {
+  color: #00e5ff;
+  margin-top: 0;
+}
+.service-card p {
+  color: #9ca3af;
+  line-height: 1.6;
+}
