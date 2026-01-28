@@ -1,5 +1,29 @@
+/* Enterprise Color Palette */
+body {
+    background-color: #ffffff;
+    color: #1f2937;
+}
 
-}/* Professional Enterprise Theme */
+header h1 {
+    color: #111827 !important; /* Professional Navy */
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/* Fix the neon blue button */
+.payment-button, .nav-cta {
+    background-color: #004a99 !important; /* Deep Trust Blue */
+    color: white !important;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 74, 153, 0.2);
+}
+
+/* Fix the invisible "View Solutions" button */
+.secondary-btn {
+    color: #004a99 !important;
+    border: 2px solid #004a99 !important;
+    background: transparent;
+}}/* Professional Enterprise Theme */
 body {
     background-color: #ffffff !important;
     color: #111827 !important;
