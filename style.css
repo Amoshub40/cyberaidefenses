@@ -116,16 +116,45 @@ footer {
     margin-top: 20px;
     transition: 0.3s;
 }
-
 .payment-button:hover {
     background-color: #00b8cc;
     transform: translateY(-2px);
+}/* Navigation Bar Styling */
+nav {
+  background: rgba(17, 24, 39, 0.9); /* Dark semi-transparent background */
+  backdrop-filter: blur(10px); /* Modern blur effect */
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #1f2937;
 }
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="platform.html">Platform</a></li>
-    <li><a href="compliance.html">Compliance</a></li>
-    <li><a href="pricing.html" class="nav-cta">Get Started</a></li>
-  </ul>
-</nav>
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #9ca3af;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00e5ff; /* Cyan glow on hover */
+}
+
+/* Call to Action Button in Nav */
+.nav-cta {
+  background: #00e5ff;
+  color: #000 !important;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
