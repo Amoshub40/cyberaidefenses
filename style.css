@@ -73,3 +73,14 @@ nav ul {
     border-radius: 12px;
     margin-bottom: 20px;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px; /* Creates the "Fortune 300" safety margin */
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
