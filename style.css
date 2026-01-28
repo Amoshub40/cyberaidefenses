@@ -244,19 +244,24 @@ section {
     padding: 40px 20px;
 }
 
-/* Create the 3-column grid for features */
+/* Ensure the grid is always balanced */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-/* Universal White Theme */
-body {
-    background-color: #ffffff !important;
-    color: #111827 !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
 }
 
+.feature-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #0066ff !important; /* Update to professional blue for white background */
+}
+
+.feature-item p {
+    line-height: 1.7;
+    color: #4b5563 !important; /* Changed from #d1d5db to dark gray for visibility on white */
+}
 nav {
     background: #ffffff !important;
     border-bottom: 1px solid #e5e7eb;
