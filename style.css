@@ -84,3 +84,34 @@ nav ul {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
+/* Expert Fortune 300 Alignment */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px; /* Prevents words from hitting the edges */
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px; /* Space between the cards */
+}
+
+.feature-item {
+    background: #111827 !important; /* Lighter navy for the card */
+    border: 1px solid #1f2937 !important;
+    border-radius: 20px;
+    overflow: hidden; /* Clips the images perfectly */
+    padding: 0; /* Remove padding here to let images hit the top */
+}
+
+.feature-content {
+    padding: 30px; /* Adds padding back for the text only */
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Prevents blurring/stretching */
+    display: block;
+}
