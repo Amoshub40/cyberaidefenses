@@ -1,79 +1,86 @@
-<nav>
-    <div class="nav-container">
-        <div class="logo">CYBERAIDEFENSES.COM</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="solutions.html">Solutions</a></li>
-            <li><a href="platform.html">Platform</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="contact.html" class="nav-cta">CONTACT</a></li>
-        </ul>
-    </div>
-</nav><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solutions | Cyberaidefenses</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hidden text styling for "Learn More" */
+        .more-info { display: none; margin-top: 15px; color: #9ca3af; font-size: 0.95rem; line-height: 1.6; }
+    </style>
 </head>
 <body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">CYBERAIDEFENSES.COM</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html" style="color: #38bdf8;">Solutions</a></li>
+            <li><a href="platform.html">Platform</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html" class="nav-cta">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="container" style="text-align: center; padding: 100px 40px;">
+    <h1 style="font-size: 3rem; margin-bottom: 20px; color: #ffffff;">Our Strategic Process</h1>
+    <p style="color: #9ca3af; font-size: 1.2rem;">Expert-led cybersecurity deployment in four distinct phases.</p>
+</header>
+
 <main class="container">
     <div class="features-grid">
-        
         <div class="feature-item">
             <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800" class="card-image" alt="Security Assessment">
-            <h3>Step 1: Initial Assessment</h3>
-            <p>Comprehensive evaluation of your cloud infrastructure to identify immediate vulnerabilities and compliance gaps using our proprietary scanning engine.</p>
+            <div class="feature-content">
+                <h3>Step 1: Initial Assessment</h3>
+                <p>Comprehensive evaluation of your current cloud infrastructure to identify immediate vulnerabilities.</p>
+                <a href="javascript:void(0)" onclick="toggleInfo('info1')" style="color: #38bdf8; text-decoration: none; font-weight: bold;">Learn More</a>
+                <div id="info1" class="more-info">Our assessment analyzes every layer of your network, ensuring compliance gaps are identified before they can be exploited.</div>
+            </div>
         </div>
 
         <div class="feature-item">
             <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800" class="card-image" alt="Strategy Development">
-            <h3>Step 2: Strategy Development</h3>
-            <p>A customized AI roadmap built for your specific AWS workload requirements and business continuity goals.</p>
+            <div class="feature-content">
+                <h3>Step 2: Strategy Development</h3>
+                <p>A customized AI roadmap built for your specific AWS workload requirements and business goals.</p>
+                <a href="javascript:void(0)" onclick="toggleInfo('info2')" style="color: #38bdf8; text-decoration: none; font-weight: bold;">Learn More</a>
+                <div id="info2" class="more-info">We design a unique defense strategy that balances high-level security with your organization's operational continuity.</div>
+            </div>
         </div>
 
         <div class="feature-item">
             <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&w=800" class="card-image" alt="AI Monitoring">
-            <h3>Step 3: AI Monitoring</h3>
-            <p>Real-time autonomous threat detection and response deployed 24/7 to keep your data secure and compliant.</p>
-        </div>
-
-    </div>
-</main>
-<main class="container">
-    <div class="solutions-grid">
-        
-        <div class="solution-card">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800" class="card-image" alt="Cybersecurity Analysis">
-            <div class="card-text">
-                <h2>Step 1: Initial Assessment</h2>
-                <p>Comprehensive evaluation of your current cloud infrastructure to identify immediate vulnerabilities and compliance gaps using our proprietary scanning engine.</p>
+            <div class="feature-content">
+                <h3>Step 3: Implementation</h3>
+                <p>Real-time autonomous threat detection and response deployed 24/7 to keep your data secure.</p>
+                <a href="javascript:void(0)" onclick="toggleInfo('info3')" style="color: #38bdf8; text-decoration: none; font-weight: bold;">Learn More</a>
+                <div id="info3" class="more-info">Deployment of our autonomous SOC platform ensures your infrastructure is monitored every second of every day.</div>
             </div>
         </div>
 
-       <main class="container">
-    <div class="features-grid">
         <div class="feature-item">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800" class="card-image" alt="Security assessment">
-            <h3>Step 1: Initial Assessment</h3>
-            <p>Full evaluation of your infrastructure to identify immediate vulnerabilities.</p>
-        </div>
-        <div class="feature-item">
-            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800" class="card-image" alt="Strategy planning">
-            <h3>Step 2: Strategy Development</h3>
-            <p>A customized AI roadmap built for your specific AWS workload requirements.</p>
-        </div>
-        <div class="feature-item">
-            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&w=800" class="card-image" alt="Cloud monitoring">
-            <h3>Step 3: AI Monitoring</h3>
-            <p>Real-time autonomous threat detection and response deployed 24/7.</p>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800" class="card-image" alt="Support Team">
+            <div class="feature-content">
+                <h3>Step 4: Improvement & Support</h3>
+                <p>Ongoing optimization and expert support to ensure your security posture evolves with new threats.</p>
+                <a href="javascript:void(0)" onclick="toggleInfo('info4')" style="color: #38bdf8; text-decoration: none; font-weight: bold;">Learn More</a>
+                <div id="info4" class="more-info">Cybersecurity is an ongoing process. Our team regularly reviews your posture, analyzes threat data, and updates strategies. We offer 24/7 support, ensuring you can respond quickly to any incidents that may arise.</div>
+            </div>
         </div>
     </div>
 </main>
-<footer style="text-align: center; padding: 40px; color: #4b5563;">
-    <p>© 2026 Cyberaidefenses LLC</p>
-</footer>
+
+<script>
+    function toggleInfo(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "block") { x.style.display = "none"; } 
+        else { x.style.display = "block"; }
+    }
+</script>
 
 </body>
 </html>
