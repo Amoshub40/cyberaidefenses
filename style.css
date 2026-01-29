@@ -72,28 +72,22 @@ nav ul {
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 20px;
-}
+}/* Expert Fortune 300 Strategic Grid */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 40px; /* Creates the "Fortune 300" safety margin */
-}
-/* Fortune 300 Strategic Grid */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 40px; /* Safety margins for professional alignment */
+    padding: 60px 40px; /* High-end safety margins */
 }
 
 .features-grid {
     display: grid;
-    /* This forces all 4 cards into one row on desktops */
+    /* This forces all 4 cards into one perfect row on desktops */
     grid-template-columns: repeat(4, 1fr); 
-    gap: 25px;
-    margin-top: 40px;
+    gap: 30px;
+    margin-top: 50px;
 }
 
-/* Fix for tablets/phones so they don't look squished */
+/* Responsive fixes for mobile and tablets */
 @media (max-width: 1024px) {
     .features-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -108,10 +102,11 @@ nav ul {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    transition: 0.3s ease;
 }
 
 .card-image {
     width: 100%;
-    height: 220px;
-    object-fit: cover; /* Prevents blurring/stretching */
+    height: 240px;
+    object-fit: cover; /* This is the "magic fix" for blurry/stretched images */
 }
