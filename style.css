@@ -8,7 +8,20 @@ body {
 }
 
 /* Master Container: Fixes edge-to-edge text */
-.container {
+.feature-item {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.feature-item:hover {
+    transform: translateY(-5px);
+    border-color: #0055ff;
+}
+.card-image {
+    filter: grayscale(40%) contrast(110%);
+    border-bottom: 1px solid #1f2937;
+}container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px; /* Essential: creates the "safety margin" at edges */
