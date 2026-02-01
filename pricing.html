@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-        .tier-card { background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; transition: transform 0.3s ease; }
+        .tier-card { background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; transition: transform 0.3s ease; position: relative; }
         .tier-card:hover { transform: translateY(-5px); border-color: #38bdf8; }
-        .tier-card.featured { border: 2px solid #38bdf8; position: relative; }
+        .tier-card.featured { border: 2px solid #38bdf8; }
         .badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #38bdf8; color: #0f172a; padding: 4px 16px; border-radius: 20px; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; }
         .price { font-size: 3rem; font-weight: 700; color: #ffffff; margin: 20px 0; }
         .price span { font-size: 1rem; color: #9ca3af; font-weight: 400; }
         .features { list-style: none; padding: 0; margin: 30px 0; flex-grow: 1; }
-        .features li { color: #9ca3af; margin-bottom: 12px; display: flex; align-items: center; }
+        .features li { color: #9ca3af; margin-bottom: 12px; display: flex; align-items: center; font-size: 0.95rem; }
         .features li::before { content: "✓"; color: #38bdf8; margin-right: 10px; font-weight: bold; }
-        .cta-button { background: #38bdf8; color: #0f172a; text-align: center; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.2s; }
+        .cta-button { background: #38bdf8; color: #0f172a; text-align: center; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.2s; border: none; cursor: pointer; }
         .cta-button:hover { background: #ffffff; }
     </style>
 </head>
@@ -34,55 +34,45 @@
         </div>
     </nav>
 
-    <header class="container" style="text-align: center; padding: 100px 40px; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%);">
-        <h1 style="font-size: 3.5rem; margin-bottom: 20px; color: #ffffff; letter-spacing: -0.02em;">Strategic Tiering</h1>
-        <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">Transparent, scalable autonomous defense infrastructure for enterprise-grade resilience.</p>
+    <header class="container" style="text-align: center; padding: 100px 40px; background: #0a0b10;">
+        <h1 style="font-size: 3.5rem; color: #ffffff; letter-spacing: -0.02em;">Strategic Tiering</h1>
+        <p style="color: #9ca3af; font-size: 1.2rem;">Select the defense posture appropriate for your current risk surface.</p>
     </header>
 
     <main class="pricing-grid">
         <div class="tier-card">
             <h3 style="color: #ffffff; font-size: 1.5rem;">Foundation</h3>
-            <p style="color: #9ca3af;">Essential monitoring for emerging infrastructure.</p>
             <div class="price">$99<span>/mo</span></div>
             <ul class="features">
                 <li>Real-time Asset Inventory</li>
                 <li>Daily Vulnerability Scanning</li>
                 <li>Automated Threat Alerts</li>
-                <li>Standard Support Access</li>
             </ul>
-            <a href="contact.html" class="cta-button">Select Foundation</a>
+            <a href="https://buy.stripe.com/example_link_1" class="cta-button">Buy Now</a>
         </div>
 
         <div class="tier-card featured">
-            <div class="badge">Recommended</div>
+            <div class="badge">Most Popular</div>
             <h3 style="color: #ffffff; font-size: 1.5rem;">Growth & Resilience</h3>
-            <p style="color: #9ca3af;">Active neutralization for scaling operations.</p>
             <div class="price">$499<span>/mo</span></div>
             <ul class="features">
                 <li>Autonomous Threat Response</li>
+                <li>Compliance Automation</li>
                 <li>Priority Incident Management</li>
-                <li>Compliance Automation (SOC2/GDPR)</li>
-                <li>Advanced API Integration</li>
             </ul>
-            <a href="contact.html" class="cta-button">Select Growth</a>
+            <a href="https://buy.stripe.com/example_link_2" class="cta-button">Buy Now</a>
         </div>
 
         <div class="tier-card">
             <h3 style="color: #ffffff; font-size: 1.5rem;">Strategic Governance</h3>
-            <p style="color: #9ca3af;">Full-spectrum defense for global organizations.</p>
             <div class="price">$1,500<span>/mo</span></div>
             <ul class="features">
-                <li>Multi-Region Sovereign Defense</li>
+                <li>Multi-Region Defense</li>
                 <li>Dedicated Engineering Support</li>
-                <li>Custom Intelligence Feeds</li>
                 <li>Full Governance Reporting</li>
             </ul>
             <a href="contact.html" class="cta-button">Contact Sales</a>
         </div>
     </main>
-
-    <footer style="padding: 60px 20px; background: #0a0b10; border-top: 1px solid #1f2937; text-align: center;">
-        <p style="color: #4b5563; font-size: 0.9rem;">&copy; 2026 Cyberaidefenses LLC. All Rights Reserved. Engineered for Enterprise Sovereignty.</p>
-    </footer>
 </body>
 </html>
