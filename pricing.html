@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing | Cyberaidefenses</title>
+    <title>Enterprise Pricing | Cyberaidefenses</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* This ensures the Stripe table has enough vertical space to load properly */
-        main { min-height: 800px; padding: 40px 0; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+        .tier-card { background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; transition: transform 0.3s ease; }
+        .tier-card:hover { transform: translateY(-5px); border-color: #38bdf8; }
+        .tier-card.featured { border: 2px solid #38bdf8; position: relative; }
+        .badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #38bdf8; color: #0f172a; padding: 4px 16px; border-radius: 20px; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; }
+        .price { font-size: 3rem; font-weight: 700; color: #ffffff; margin: 20px 0; }
+        .price span { font-size: 1rem; color: #9ca3af; font-weight: 400; }
+        .features { list-style: none; padding: 0; margin: 30px 0; flex-grow: 1; }
+        .features li { color: #9ca3af; margin-bottom: 12px; display: flex; align-items: center; }
+        .features li::before { content: "✓"; color: #38bdf8; margin-right: 10px; font-weight: bold; }
+        .cta-button { background: #38bdf8; color: #0f172a; text-align: center; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.2s; }
+        .cta-button:hover { background: #ffffff; }
     </style>
 </head>
 <body>
@@ -25,29 +35,54 @@
     </nav>
 
     <header class="container" style="text-align: center; padding: 100px 40px; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%);">
-        <h1 style="font-size: 3.5rem; margin-bottom: 20px; color: #ffffff;">Enterprise Tiers</h1>
-        <p style="color: #9ca3af; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Scalable autonomous defense infrastructure for every stage of organizational maturity.</p>
+        <h1 style="font-size: 3.5rem; margin-bottom: 20px; color: #ffffff; letter-spacing: -0.02em;">Strategic Tiering</h1>
+        <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">Transparent, scalable autonomous defense infrastructure for enterprise-grade resilience.</p>
     </header>
 
-    <main class="container">
-        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-<stripe-pricing-table 
-  pricing-table-id="prctbl_1SvT3GDeqXwZ0JvqDmBheZKS"
-  publishable-key="pk_live_51SoHeADeqXwZ0JvqSREg0Xy5tLdM3QG7uVv2Yw8h3L6N6jH9f5K8M9V4X3L7N0P1R2S3T4U5V6W7X8Y9Z0">
-</stripe-pricing-table>    </main>
-
-    <footer style="padding: 80px 20px; background: #0a0b10; border-top: 1px solid #1f2937;">
-        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: left;">
-            <div>
-                <div style="color: #ffffff; font-weight: bold; margin-bottom: 20px;">CYBERAIDEFENSES.COM</div>
-                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6;">Autonomous defense infrastructure engineered for global enterprise resilience.</p>
-            </div>
-            <div>
-                <h4 style="color: #ffffff; margin-bottom: 20px; font-size: 0.8rem; text-transform: uppercase;">Headquarters</h4>
-                <p style="color: #9ca3af; font-size: 0.9rem;">1312 17th Street, Suite #230<br>Denver, CO 80202</p>
-                <p style="color: #38bdf8; font-size: 0.9rem; margin-top: 10px;">720-355-5699</p>
-            </div>
+    <main class="pricing-grid">
+        <div class="tier-card">
+            <h3 style="color: #ffffff; font-size: 1.5rem;">Foundation</h3>
+            <p style="color: #9ca3af;">Essential monitoring for emerging infrastructure.</p>
+            <div class="price">$99<span>/mo</span></div>
+            <ul class="features">
+                <li>Real-time Asset Inventory</li>
+                <li>Daily Vulnerability Scanning</li>
+                <li>Automated Threat Alerts</li>
+                <li>Standard Support Access</li>
+            </ul>
+            <a href="contact.html" class="cta-button">Select Foundation</a>
         </div>
+
+        <div class="tier-card featured">
+            <div class="badge">Recommended</div>
+            <h3 style="color: #ffffff; font-size: 1.5rem;">Growth & Resilience</h3>
+            <p style="color: #9ca3af;">Active neutralization for scaling operations.</p>
+            <div class="price">$499<span>/mo</span></div>
+            <ul class="features">
+                <li>Autonomous Threat Response</li>
+                <li>Priority Incident Management</li>
+                <li>Compliance Automation (SOC2/GDPR)</li>
+                <li>Advanced API Integration</li>
+            </ul>
+            <a href="contact.html" class="cta-button">Select Growth</a>
+        </div>
+
+        <div class="tier-card">
+            <h3 style="color: #ffffff; font-size: 1.5rem;">Strategic Governance</h3>
+            <p style="color: #9ca3af;">Full-spectrum defense for global organizations.</p>
+            <div class="price">$1,500<span>/mo</span></div>
+            <ul class="features">
+                <li>Multi-Region Sovereign Defense</li>
+                <li>Dedicated Engineering Support</li>
+                <li>Custom Intelligence Feeds</li>
+                <li>Full Governance Reporting</li>
+            </ul>
+            <a href="contact.html" class="cta-button">Contact Sales</a>
+        </div>
+    </main>
+
+    <footer style="padding: 60px 20px; background: #0a0b10; border-top: 1px solid #1f2937; text-align: center;">
+        <p style="color: #4b5563; font-size: 0.9rem;">&copy; 2026 Cyberaidefenses LLC. All Rights Reserved. Engineered for Enterprise Sovereignty.</p>
     </footer>
 </body>
 </html>
