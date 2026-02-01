@@ -8,7 +8,8 @@
     <style>
         .more-info { display: none; margin-top: 15px; color: #9ca3af; font-size: 0.95rem; line-height: 1.6; }
         .learn-more-btn { color: #38bdf8; text-decoration: none; font-weight: bold; cursor: pointer; display: inline-block; margin-top: 10px; }
-        .feature-item { background: #111827; border: 1px solid #1f2937; border-radius: 12px; margin-bottom: 20px; overflow: hidden; }
+        .feature-item { background: #111827; border: 1px solid #1f2937; border-radius: 12px; margin-bottom: 30px; overflow: hidden; display: flex; flex-direction: column; }
+        .card-image { width: 100%; height: 200px; object-fit: crop; display: block; }
     </style>
 </head>
 <body>
@@ -31,11 +32,11 @@
     </header>
 
     <main class="container">
-        <div class="features-grid">
+        <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding-bottom: 80px;">
             <div class="feature-item">
-                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800" class="card-image" alt="Initial Assessment">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800" class="card-image" alt="Risk Assessment">
                 <div class="feature-content" style="padding: 25px;">
-                    <h3 style="color: #38bdf8;">Phase 1: Diagnostic Risk Architecture</h3>
+                    <h3 style="color: #38bdf8; margin-top: 0;">Phase 1: Diagnostic Risk Architecture</h3>
                     <p>Holistic evaluation of cloud infrastructure to map systemic risks and technical debt.</p>
                     <span class="learn-more-btn" onclick="toggleInfo('info1')">Learn More</span>
                     <div id="info1" class="more-info">Our assessment analyzes every layer of your network, ensuring compliance gaps are identified before they can be exploited.</div>
@@ -43,9 +44,9 @@
             </div>
 
             <div class="feature-item">
-                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800" class="card-image" alt="Strategy Development">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800" class="card-image" alt="Roadmap Engineering">
                 <div class="feature-content" style="padding: 25px;">
-                    <h3 style="color: #38bdf8;">Phase 2: Autonomous Roadmap Engineering</h3>
+                    <h3 style="color: #38bdf8; margin-top: 0;">Phase 2: Autonomous Roadmap Engineering</h3>
                     <p>Customized AI-deployment strategies optimized for business continuity and regulatory compliance.</p>
                     <span class="learn-more-btn" onclick="toggleInfo('info2')">Learn More</span>
                     <div id="info2" class="more-info">We design a unique defense strategy that balances high-level security with your organization's operational continuity.</div>
@@ -53,9 +54,9 @@
             </div>
 
             <div class="feature-item">
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&w=800" class="card-image" alt="AI Monitoring">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&w=800" class="card-image" alt="SOC Integration">
                 <div class="feature-content" style="padding: 25px;">
-                    <h3 style="color: #38bdf8;">Phase 3: Autonomous SOC Integration</h3>
+                    <h3 style="color: #38bdf8; margin-top: 0;">Phase 3: Autonomous SOC Integration</h3>
                     <p>Deployment of real-time, self-healing cyber defense protocols with active threat containment.</p>
                     <span class="learn-more-btn" onclick="toggleInfo('info3')">Learn More</span>
                     <div id="info3" class="more-info">Deployment of our autonomous SOC platform ensures your infrastructure is monitored every second of every day.</div>
@@ -63,10 +64,10 @@
             </div>
 
             <div class="feature-item">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800" class="card-image" alt="Support Team">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800" class="card-image" alt="Lifecycle Governance">
                 <div class="feature-content" style="padding: 25px;">
-                    <h3 style="color: #38bdf8;">Phase 4: Lifecycle Governance & Optimization</h3>
-                    <p>Persistent system refinement and adaptive intelligence to stay ahead of evolving global threat landscapes.</p>
+                    <h3 style="color: #38bdf8; margin-top: 0;">Phase 4: Lifecycle Governance & Optimization</h3>
+                    <p>Persistent system refinement and adaptive intelligence to stay ahead of evolving threat landscapes.</p>
                     <span class="learn-more-btn" onclick="toggleInfo('info4')">Learn More</span>
                     <div id="info4" class="more-info">Cybersecurity is an ongoing process. Our team regularly reviews your security posture and updates strategies to adapt to an ever-changing cyber landscape.</div>
                 </div>
@@ -74,10 +75,18 @@
         </div>
     </main>
 
+    <footer style="padding: 60px 0; text-align: center; border-top: 1px solid #1f2937;">
+        <p style="color: #4b5563;">&copy; 2026 Cyberaidefenses LLC. All Rights Reserved.</p>
+    </footer>
+
     <script>
         function toggleInfo(id) {
             var x = document.getElementById(id);
-            x.style.display = (x.style.display === "block") ? "none" : "block";
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
     </script>
 </body>
