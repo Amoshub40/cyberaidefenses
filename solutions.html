@@ -3,108 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strategic Impact Framework | Cyberaidefenses</title>
+    <title>Solutions | Cyberaidefenses</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .solutions-header { text-align: center; padding: 120px 40px; background: #0a0b10; }
-        .framework-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 30px; 
-            max-width: 1200px; 
-            margin: 0 auto; 
-            padding: 60px 20px; 
-        }
-        .phase-card { 
-            background: #111827; 
-            border: 1px solid #1f2937; 
-            border-radius: 12px; 
-            overflow: hidden; 
-            display: flex; 
-            flex-direction: column; 
-            transition: transform 0.3s ease, border-color 0.3s ease; 
-        }
-        .phase-card:hover { transform: translateY(-5px); border-color: #38bdf8; }
-        .phase-card img { width: 100%; height: 200px; object-fit: cover; filter: brightness(0.8); }
-        .phase-content { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
-        .phase-title { color: #38bdf8; font-size: 1.25rem; margin-bottom: 15px; font-weight: 600; }
-        .phase-text { color: #9ca3af; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px; flex-grow: 1; }
-        .cta-link { color: #38bdf8; text-decoration: none; font-weight: bold; font-size: 0.9rem; display: flex; align-items: center; }
-        .cta-link:hover { color: #ffffff; }
-    </style>
 </head>
-<body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">CYBERAIDEFENSES.COM</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="solutions.html">Solutions</a></li>
-                <li><a href="platform.html">Platform</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact.html" class="nav-cta">CONTACT</a></li>
-            </ul>
+<body style="background-color: #0a0b10; color: #ffffff; font-family: sans-serif; margin: 0;">
+    <nav style="padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937;">
+        <div style="font-weight: bold; letter-spacing: 1px;">CYBERAIDEFENSES.COM</div>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Home</a>
+            <a href="solutions.html" style="color: #38bdf8; text-decoration: none; font-size: 0.9rem;">Solutions</a>
+            <a href="platform.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Platform</a>
+            <a href="pricing.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Pricing</a>
+            <a href="contact.html" style="color: #ffffff; background: #38bdf8; padding: 8px 20px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: bold;">CONTACT</a>
         </div>
     </nav>
 
-    <header class="solutions-header">
-        <h1 style="font-size: 3.5rem; color: #ffffff; letter-spacing: -0.02em;">Strategic Impact Framework</h1>
-        <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 20px auto 0;">A multi-phase defense methodology engineered for global enterprise resilience.</p>
+    <header style="text-align: center; padding: 100px 20px;">
+        <h1 style="font-size: 3.5rem; margin: 0; letter-spacing: -0.02em;">Strategic Impact Framework</h1>
     </header>
 
-    <main class="framework-grid">
-        <div class="phase-card">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="Phase 1">
-            <div class="phase-content">
-                <h3 class="phase-title">Phase 1: Diagnostic</h3>
-                <p class="phase-text">Holistic evaluation of cloud infrastructure and legacy networks to map systemic risks and technical debt.</p>
-                <a href="contact.html" class="cta-link">Learn More →</a>
+    <main style="max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+        <div style="background: #111827; border: 1px solid #1f2937; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px; flex-grow: 1;">
+                <h3 style="color: #38bdf8; margin-top: 0;">Phase 1: Diagnostic</h3>
+                <p style="color: #9ca3af; line-height: 1.6; font-size: 0.95rem;">Holistic evaluation of cloud infrastructure and networks to map systemic risks.</p>
+                <a href="contact.html" style="color: #38bdf8; text-decoration: none; font-weight: bold; margin-top: 15px; display: inline-block;">Learn More →</a>
             </div>
         </div>
 
-        <div class="phase-card">
-            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800" alt="Phase 2">
-            <div class="phase-content">
-                <h3 class="phase-title">Phase 2: Neutralization</h3>
-                <p class="phase-text">Immediate deployment of defensive patches and autonomous firewalls to secure high-value data assets.</p>
-                <a href="contact.html" class="cta-link">Learn More →</a>
+        <div style="background: #111827; border: 1px solid #1f2937; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px; flex-grow: 1;">
+                <h3 style="color: #38bdf8; margin-top: 0;">Phase 2: Neutralization</h3>
+                <p style="color: #9ca3af; line-height: 1.6; font-size: 0.95rem;">Immediate deployment of defensive patches and autonomous firewalls.</p>
+                <a href="contact.html" style="color: #38bdf8; text-decoration: none; font-weight: bold; margin-top: 15px; display: inline-block;">Learn More →</a>
             </div>
         </div>
 
-        <div class="phase-card">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" alt="Phase 3">
-            <div class="phase-content">
-                <h3 class="phase-title">Phase 3: Integration</h3>
-                <p class="phase-text">Seamless deployment of real-time, self-healing cyber defense protocols across the enterprise ecosystem.</p>
-                <a href="contact.html" class="cta-link">Learn More →</a>
+        <div style="background: #111827; border: 1px solid #1f2937; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px; flex-grow: 1;">
+                <h3 style="color: #38bdf8; margin-top: 0;">Phase 3: Integration</h3>
+                <p style="color: #9ca3af; line-height: 1.6; font-size: 0.95rem;">Seamless deployment of real-time, self-healing SOC defense protocols.</p>
+                <a href="contact.html" style="color: #38bdf8; text-decoration: none; font-weight: bold; margin-top: 15px; display: inline-block;">Learn More →</a>
             </div>
         </div>
 
-        <div class="phase-card">
-            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800" alt="Phase 4">
-            <div class="phase-content">
-                <h3 class="phase-title">Phase 4: Resilience</h3>
-                <p class="phase-text">Continuous monitoring and adaptive intelligence updates to maintain digital sovereignty in a volatile threat landscape.</p>
-                <a href="contact.html" class="cta-link">Learn More →</a>
+        <div style="background: #111827; border: 1px solid #1f2937; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px; flex-grow: 1;">
+                <h3 style="color: #38bdf8; margin-top: 0;">Phase 4: Resilience</h3>
+                <p style="color: #9ca3af; line-height: 1.6; font-size: 0.95rem;">Continuous monitoring and adaptive intelligence updates to meet evolving threats.</p>
+                <a href="contact.html" style="color: #38bdf8; text-decoration: none; font-weight: bold; margin-top: 15px; display: inline-block;">Learn More →</a>
             </div>
         </div>
     </main>
 
-    <footer style="padding: 80px 20px; background: #0a0b10; border-top: 1px solid #1f2937; margin-top: 40px;">
-        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: left; max-width: 1200px; margin: 0 auto;">
-            <div>
-                <div style="color: #ffffff; font-weight: bold; margin-bottom: 20px;">CYBERAIDEFENSES.COM</div>
-                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6;">Autonomous defense infrastructure engineered for global enterprise resilience.</p>
-            </div>
-            <div>
-                <h4 style="color: #ffffff; margin-bottom: 20px; font-size: 0.8rem; text-transform: uppercase;">Headquarters</h4>
-                <p style="color: #9ca3af; font-size: 0.9rem;">1312 17th Street, Suite #230<br>Denver, CO 80202</p>
-                <p style="color: #38bdf8; font-size: 0.9rem; margin-top: 10px;">720-355-5699</p>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #1f2937;">
-            <p style="color: #4b5563; font-size: 0.85rem;">&copy; 2026 Cyberaidefenses LLC. All Rights Reserved.</p>
-        </div>
+    <footer style="padding: 60px 20px; border-top: 1px solid #1f2937; text-align: center; margin-top: 40px;">
+        <p style="color: #4b5563; font-size: 0.85rem;">&copy; 2026 Cyberaidefenses LLC. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
