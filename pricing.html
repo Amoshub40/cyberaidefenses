@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing | Cyberaidefenses</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* This ensures the Stripe table has enough vertical space to load properly */
+        main { min-height: 800px; padding: 40px 0; }
+    </style>
 </head>
 <body>
     <nav>
@@ -19,33 +23,32 @@
             </ul>
         </div>
     </nav>
-    <header class="container" style="text-align: center; padding: 120px 40px; background: #0a0b10;">
-        <h1 style="font-size: 3.5rem; color: #ffffff;">Enterprise Tiers</h1>
-        <p style="color: #9ca3af;">Scalable autonomous defense for every stage of infrastructure maturity.</p>
+
+    <header class="container" style="text-align: center; padding: 100px 40px; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%);">
+        <h1 style="font-size: 3.5rem; margin-bottom: 20px; color: #ffffff;">Enterprise Tiers</h1>
+        <p style="color: #9ca3af; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Scalable autonomous defense infrastructure for every stage of organizational maturity.</p>
     </header>
-    <main class="container" style="padding: 60px 20px;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1000px; margin: 0 auto;">
-            <div style="background: #111827; border: 1px solid #1f2937; padding: 40px; border-radius: 15px; text-align: center;">
-                <h3 style="color: #ffffff;">Standard Defense</h3>
-                <div style="font-size: 2.5rem; color: #38bdf8; margin: 20px 0;">$499<span style="font-size: 1rem; color: #9ca3af;">/mo</span></div>
-                <ul style="list-style: none; padding: 0; color: #9ca3af; margin-bottom: 30px; line-height: 2;">
-                    <li>✓ Core Asset Monitoring</li>
-                    <li>✓ Weekly Risk Diagnostics</li>
-                    <li>✓ 24/7 Threat Alerts</li>
-                </ul>
-                <a href="contact.html" style="background: #38bdf8; color: #ffffff; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: block;">Get Started</a>
+
+    <main class="container">
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <stripe-pricing-table 
+          pricing-table-id="prctbl_1SvT3GDeqXwZ0JvqDmBheZKS"
+          publishable-key="pk_live_51SoHeADeqXwZ0JvqSREg0Xy5tLdM3QG7uVv2Yw8h3L6N6jH9f5K8M9V4X3L7N0P1R2S3T4U5V6W7X8Y9Z0">
+        </stripe-pricing-table>
+    </main>
+
+    <footer style="padding: 80px 20px; background: #0a0b10; border-top: 1px solid #1f2937;">
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: left;">
+            <div>
+                <div style="color: #ffffff; font-weight: bold; margin-bottom: 20px;">CYBERAIDEFENSES.COM</div>
+                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6;">Autonomous defense infrastructure engineered for global enterprise resilience.</p>
             </div>
-            <div style="background: #111827; border: 2px solid #38bdf8; padding: 40px; border-radius: 15px; text-align: center;">
-                <h3 style="color: #ffffff;">Advanced Resilience</h3>
-                <div style="font-size: 2.5rem; color: #38bdf8; margin: 20px 0;">$999<span style="font-size: 1rem; color: #9ca3af;">/mo</span></div>
-                <ul style="list-style: none; padding: 0; color: #9ca3af; margin-bottom: 30px; line-height: 2;">
-                    <li>✓ Everything in Standard</li>
-                    <li>✓ Autonomous Neutralization</li>
-                    <li>✓ Priority Incident Response</li>
-                </ul>
-                <a href="contact.html" style="background: #38bdf8; color: #ffffff; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: block;">Most Popular</a>
+            <div>
+                <h4 style="color: #ffffff; margin-bottom: 20px; font-size: 0.8rem; text-transform: uppercase;">Headquarters</h4>
+                <p style="color: #9ca3af; font-size: 0.9rem;">1312 17th Street, Suite #230<br>Denver, CO 80202</p>
+                <p style="color: #38bdf8; font-size: 0.9rem; margin-top: 10px;">720-355-5699</p>
             </div>
         </div>
-    </main>
+    </footer>
 </body>
 </html>
