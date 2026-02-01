@@ -8,72 +8,77 @@
     <style>
         .more-info { display: none; margin-top: 15px; color: #9ca3af; font-size: 0.95rem; line-height: 1.6; }
         .learn-more-btn { color: #38bdf8; text-decoration: none; font-weight: bold; cursor: pointer; display: inline-block; margin-top: 10px; }
+        .feature-item { background: #111827; border: 1px solid #1f2937; border-radius: 12px; margin-bottom: 20px; overflow: hidden; }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">CYBERAIDEFENSES.COM</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="platform.html">Platform</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html" class="nav-cta">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<nav>
-    <div class="nav-container">
-        <div class="logo">CYBERAIDEFENSES.COM</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="solutions.html">Solutions</a></li>
-            <li><a href="platform.html">Platform</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="contact.html" class="nav-cta">CONTACT</a></li>
-        </ul>
-    </div>
-</nav>
-<header class="container" style="text-align: center; padding: 120px 40px; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%);">
-    <h1 style="font-size: 3.5rem; margin-bottom: 24px; color: #ffffff; letter-spacing: -0.02em;">Strategic Impact Framework</h1>
-    <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">Our methodology for establishing digital sovereignty and operational resilience through autonomous defense integration.</p>
-</header>
-<main class="container">
-    <div class="features-grid">
-        <div class="feature-item">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800" class="card-image" alt="Initial Assessment">
-            <div class="feature-content">
-                <h3>Phase 1: Diagnostic Risk Architecture</h3>.
-                <p>Holistic evaluation of cloud infrastructure to map systemic risks and technical debt.</p>
-                <span class="learn-more-btn" onclick="toggleInfo('info1')">Learn More</span>
-                <div id="info1" class="more-info">Our assessment analyzes every layer of your network, ensuring compliance gaps are identified before they can be exploited.</div>
+    <header class="container" style="text-align: center; padding: 120px 40px; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%);">
+        <h1 style="font-size: 3.5rem; margin-bottom: 24px; color: #ffffff; letter-spacing: -0.02em;">Strategic Impact Framework</h1>
+        <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">Our methodology for establishing digital sovereignty and operational resilience through autonomous defense integration.</p>
+    </header>
+
+    <main class="container">
+        <div class="features-grid">
+            <div class="feature-item">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800" class="card-image" alt="Initial Assessment">
+                <div class="feature-content" style="padding: 25px;">
+                    <h3 style="color: #38bdf8;">Phase 1: Diagnostic Risk Architecture</h3>
+                    <p>Holistic evaluation of cloud infrastructure to map systemic risks and technical debt.</p>
+                    <span class="learn-more-btn" onclick="toggleInfo('info1')">Learn More</span>
+                    <div id="info1" class="more-info">Our assessment analyzes every layer of your network, ensuring compliance gaps are identified before they can be exploited.</div>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800" class="card-image" alt="Strategy Development">
+                <div class="feature-content" style="padding: 25px;">
+                    <h3 style="color: #38bdf8;">Phase 2: Autonomous Roadmap Engineering</h3>
+                    <p>Customized AI-deployment strategies optimized for business continuity and regulatory compliance.</p>
+                    <span class="learn-more-btn" onclick="toggleInfo('info2')">Learn More</span>
+                    <div id="info2" class="more-info">We design a unique defense strategy that balances high-level security with your organization's operational continuity.</div>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&w=800" class="card-image" alt="AI Monitoring">
+                <div class="feature-content" style="padding: 25px;">
+                    <h3 style="color: #38bdf8;">Phase 3: Autonomous SOC Integration</h3>
+                    <p>Deployment of real-time, self-healing cyber defense protocols with active threat containment.</p>
+                    <span class="learn-more-btn" onclick="toggleInfo('info3')">Learn More</span>
+                    <div id="info3" class="more-info">Deployment of our autonomous SOC platform ensures your infrastructure is monitored every second of every day.</div>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800" class="card-image" alt="Support Team">
+                <div class="feature-content" style="padding: 25px;">
+                    <h3 style="color: #38bdf8;">Phase 4: Lifecycle Governance & Optimization</h3>
+                    <p>Persistent system refinement and adaptive intelligence to stay ahead of evolving global threat landscapes.</p>
+                    <span class="learn-more-btn" onclick="toggleInfo('info4')">Learn More</span>
+                    <div id="info4" class="more-info">Cybersecurity is an ongoing process. Our team regularly reviews your security posture and updates strategies to adapt to an ever-changing cyber landscape.</div>
+                </div>
             </div>
         </div>
+    </main>
 
-        <div class="feature-item">
-            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800" class="card-image" alt="Strategy Development">
-            <div class="feature-content">
-                <h3>Phase 2: Autonomous Roadmap Engineering</h3>.                
-                <p>Customized AI-deployment strategies optimized for business continuity and regulatory compliance.</p>
-                <span class="learn-more-btn" onclick="toggleInfo('info2')">Learn More</span>
-                <div id="info2" class="more-info">We design a unique defense strategy that balances high-level security with your organization's operational continuity.</div>
-            </div>
-        </div> <div class="feature-item">
-    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&w=800" class="card-image" alt="AI Monitoring">
-    <div class="feature-content" style="padding: 25px;">        <h3 style="color: #38bdf8; font-size: 1.2rem;">Phase 3: Autonomous SOC Integration</h3>
-        <p style="color: #9ca3af; font-size: 0.95rem;">Deployment of real-time, self-healing cyber defense protocols with active threat containment.</p>
-        <span class="learn-more-btn" onclick="toggleInfo('info3')">Learn More</span>
-    </div id="info3" class="more-info">Deployment of our autonomous SOC platform ensures your infrastructure is monitored every second of every day.</div>
-    </div>
-        <div class="feature-item">
-            <div>
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800" class="card-image" alt="Support Team">
-            <div class="feature-content">
-                <h3>Phase 4: Lifecycle Governance & Optimization</h3>
-                <p>Persistent system refinement and adaptive intelligence to stay ahead of evolving global threat landscapes.</p>
-                <span class="learn-more-btn" onclick="toggleInfo('info4')">Learn More</span>
-                <div id="info4" class="more-info">Cybersecurity is an ongoing process. Our team regularly reviews your security posture, analyzes threat data, and updates strategies as needed to adapt to an ever-changing cyber landscape. We offer 24/7 support, ensuring that your organization can respond quickly to any incidents that may arise.</div>
-            </div>
-        </div>
-    </div>
-</main>
-
-<script>
-    function toggleInfo(id) {
-        var x = document.getElementById(id);
-        x.style.display = (x.style.display === "block") ? "none" : "block";
-    }
-</script>
-
+    <script>
+        function toggleInfo(id) {
+            var x = document.getElementById(id);
+            x.style.display = (x.style.display === "block") ? "none" : "block";
+        }
+    </script>
 </body>
 </html>
