@@ -3,61 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise Pricing | Cyberaidefenses</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-        .tier-card { background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; transition: transform 0.3s ease; position: relative; }
-        .tier-card:hover { transform: translateY(-5px); border-color: #38bdf8; }
-        .tier-card.featured { border: 2px solid #38bdf8; }
-        .badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #38bdf8; color: #0f172a; padding: 4px 16px; border-radius: 20px; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; }
-        .price { font-size: 3rem; font-weight: 700; color: #ffffff; margin: 20px 0; }
-        .price span { font-size: 1rem; color: #9ca3af; font-weight: 400; }
-        .features { list-style: none; padding: 0; margin: 30px 0; flex-grow: 1; }
-        .features li { color: #9ca3af; margin-bottom: 12px; display: flex; align-items: center; font-size: 0.95rem; }
-        .features li::before { content: "✓"; color: #38bdf8; margin-right: 10px; font-weight: bold; }
-        .cta-button { background: #38bdf8; color: #0f172a; text-align: center; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.2s; border: none; cursor: pointer; }
-        .cta-button:hover { background: #ffffff; }
-    </style>
+    <title>Pricing | Cyberaidefenses</title>
 </head>
-<body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">CYBERAIDEFENSES.COM</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="solutions.html">Solutions</a></li>
-                <li><a href="platform.html">Platform</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact.html" class="nav-cta">CONTACT</a></li>
-            </ul>
+<body style="background-color: #0a0b10; color: #ffffff; font-family: sans-serif; margin: 0;">
+    <nav style="padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937;">
+        <div style="font-weight: bold; letter-spacing: 1px;">CYBERAIDEFENSES.COM</div>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Home</a>
+            <a href="solutions.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Solutions</a>
+            <a href="platform.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Platform</a>
+            <a href="pricing.html" style="color: #38bdf8; text-decoration: none; font-size: 0.9rem;">Pricing</a>
+            <a href="contact.html" style="color: #ffffff; background: #38bdf8; padding: 8px 20px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: bold;">CONTACT</a>
         </div>
     </nav>
 
-    <header class="container" style="text-align: center; padding: 100px 40px; background: #0a0b10;">
-        <h1 style="font-size: 3.5rem; color: #ffffff; letter-spacing: -0.02em;">Strategic Tiering</h1>
-        <p style="color: #9ca3af; font-size: 1.2rem;">Select the defense posture appropriate for your current risk surface.</p>
+    <header style="text-align: center; padding: 80px 20px;">
+        <h1 style="font-size: 3rem; margin: 0;">SMB Tactical Pricing</h1>
+        <p style="color: #9ca3af; margin-top: 15px;">Enterprise-grade security scaled for your AWS environment.</p>
     </header>
 
-    <div class="pricing-grid">
-    <div class="tier-card">
-        <h3>Foundation</h3>
-        <div class="price">$99<span>/mo</span></div>
-        <a href="PASTE_FOUNDATION_LINK_HERE" class="cta-button">Buy Now</a>
-    </div>
+    <main style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+        
+        <div style="background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 40px; text-align: center; display: flex; flex-direction: column;">
+            <h3 style="color: #38bdf8; margin-top: 0;">Foundation</h3>
+            <div style="font-size: 2.5rem; font-weight: bold; margin: 20px 0;">Contact Us</div>
+            <p style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 30px; flex-grow: 1;">The essential starting point for AWS-based startups needing cyber insurance compliance.</p>
+            <ul style="text-align: left; color: #cbd5e1; font-size: 0.85rem; padding: 0; list-style: none; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;">✓ Autonomous Threat Alerts</li>
+                <li style="margin-bottom: 10px;">✓ Insurance Audit Ready</li>
+                <li style="margin-bottom: 10px;">✓ 24/7 Security Logging</li>
+            </ul>
+            <a href="contact.html" style="background: #1f2937; color: #ffffff; text-decoration: none; padding: 12px; border-radius: 8px; font-weight: bold;">Inquire Now</a>
+        </div>
 
-    <div class="tier-card featured">
-        <div class="badge">Recommended</div>
-        <h3>Growth & Resilience</h3>
-        <div class="price">$499<span>/mo</span></div>
-        <a href="PASTE_GROWTH_LINK_HERE" class="cta-button">Buy Now</a>
-    </div>
+        <div style="background: #111827; border: 2px solid #38bdf8; border-radius: 16px; padding: 40px; text-align: center; display: flex; flex-direction: column; transform: scale(1.05); position: relative;">
+            <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #38bdf8; color: #0f172a; padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: bold;">RECOMMENDED</div>
+            <h3 style="color: #38bdf8; margin-top: 0;">Growth & Resilience</h3>
+            <div style="font-size: 2.5rem; font-weight: bold; margin: 20px 0;">$499<span style="font-size: 1rem; color: #9ca3af;">/mo</span></div>
+            <p style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 30px; flex-grow: 1;">Advanced ransomware containment for mid-level firms utilizing AWS infrastructure.</p>
+            <ul style="text-align: left; color: #cbd5e1; font-size: 0.85rem; padding: 0; list-style: none; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;">✓ Autonomous Ransomware Block</li>
+                <li style="margin-bottom: 10px;">✓ Rapid Recovery Protocols</li>
+                <li style="margin-bottom: 10px;">✓ Advanced Threat Intelligence</li>
+            </ul>
+            <a href="https://buy.stripe.com/..." style="background: #38bdf8; color: #0f172a; text-decoration: none; padding: 12px; border-radius: 8px; font-weight: bold;">Subscribe Now</a>
+        </div>
 
-    <div class="tier-card">
-        <h3>Strategic Governance</h3>
-        <div class="price">$1,500<span>/mo</span></div>
-        <a href="PASTE_GOVERNANCE_LINK_HERE" class="cta-button">Buy Now</a>
-    </div>
-</div>
+        <div style="background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 40px; text-align: center; display: flex; flex-direction: column;">
+            <h3 style="color: #38bdf8; margin-top: 0;">Strategic Governance</h3>
+            <div style="font-size: 2.5rem; font-weight: bold; margin: 20px 0;">$1,500<span style="font-size: 1rem; color: #9ca3af;">/mo</span></div>
+            <p style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 30px; flex-grow: 1;">Full advisory for companies seeking federal grants and institutional loans.</p>
+            <ul style="text-align: left; color: #cbd5e1; font-size: 0.85rem; padding: 0; list-style: none; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;">✓ Grant-Ready Documentation</li>
+                <li style="margin-bottom: 10px;">✓ Compliance Engineering</li>
+                <li style="margin-bottom: 10px;">✓ Quarterly Strategic Reviews</li>
+            </ul>
+            <a href="https://buy.stripe.com/..." style="background: #1f2937; color: #ffffff; text-decoration: none; padding: 12px; border-radius: 8px; font-weight: bold;">Subscribe Now</a>
+        </div>
+    </main>
+
+    <footer style="padding: 60px 20px; border-top: 1px solid #1f2937; text-align: center; margin-top: 80px; color: #4b5563; font-size: 0.85rem;">
+        &copy; 2026 Cyberaidefenses LLC. All Rights Reserved.
+    </footer>
 </body>
 </html>
