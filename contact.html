@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Cyberaidefenses</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: #0a0b10; color: #ffffff; font-family: sans-serif; margin: 0;">
     <nav style="padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937;">
@@ -21,12 +20,12 @@
         </div>
     </nav>
 
-    <header class="container" style="text-align: center; padding: 100px 40px; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%);">
+    <header style="text-align: center; padding: 100px 40px; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%);">
         <h1 style="font-size: 3.5rem; margin-bottom: 24px; color: #ffffff; letter-spacing: -0.02em;">Secure Communication</h1>
         <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">Connect with our technical team in Denver to discuss autonomous defense integration or enterprise support.</p>
     </header>
 
-    <main class="container" style="max-width: 1200px; margin: 0 auto; padding-bottom: 100px;">
+    <main style="max-width: 1200px; margin: 0 auto; padding-bottom: 100px;">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; align-items: start;">
             
             <div style="background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937;">
@@ -49,6 +48,9 @@
 
             <form action="https://formspree.io/f/your_form_id" method="POST" style="background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937;">
                 <h2 style="color: #ffffff; margin-bottom: 30px;">Inquiry Form</h2>
+                
+                <input type="hidden" name="_next" value="https://cyberaidefenses.com/thank-you.html">
+                
                 <div style="margin-bottom: 20px;">
                     <label style="color: #ffffff; display: block; margin-bottom: 8px; font-size: 0.9rem;">Full Name</label>
                     <input type="text" name="name" required style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
@@ -59,7 +61,8 @@
                 </div>
                 <div style="margin-bottom: 20px;">
                     <label style="color: #ffffff; display: block; margin-bottom: 8px; font-size: 0.9rem;">Cloud Environment</label>
-                    <select name="environment" style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
+                    <select name="environment" required style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
+                        <option value="" disabled selected>Select Infrastructure</option>
                         <option value="aws">AWS</option>
                         <option value="azure">Azure</option>
                         <option value="gcp">GCP</option>
