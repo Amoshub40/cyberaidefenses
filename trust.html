@@ -4,53 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trust Center | Cyberaidefenses</title>
+    <style>
+        body { background-color: #0a0b10; color: #ffffff; font-family: 'Inter', sans-serif; margin: 0; }
+        .nav-bar { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .hero { text-align: center; padding: 100px 0; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%); }
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; padding: 60px 0; }
+        .trust-card { background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937; transition: 0.3s; }
+        .trust-card:hover { border-color: #38bdf8; transform: translateY(-5px); }
+        .trust-card h3 { color: #38bdf8; margin-top: 0; margin-bottom: 15px; }
+        .trust-card p { color: #9ca3af; line-height: 1.6; font-size: 0.95rem; }
+        .cta-section { background: #111827; padding: 100px 20px; text-align: center; border-top: 1px solid #1f2937; }
+        .footer { padding: 80px 40px; background: #0a0b10; border-top: 1px solid #1f2937; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+        .footer h4 { color: #ffffff; margin-bottom: 20px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        .footer p, .footer a { color: #9ca3af; text-decoration: none; font-size: 0.9rem; line-height: 1.6; display: block; margin-bottom: 10px; }
+    </style>
 </head>
-<body style="background-color: #0a0b10; color: #ffffff; font-family: sans-serif; margin: 0;">
-    <nav style="padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937;">
-        <div style="font-weight: bold; letter-spacing: 1px;">CYBERAIDEFENSES.COM</div>
+<body>
+    <nav class="nav-bar">
+        <div style="font-weight: bold;"><a href="index.html" style="color: #ffffff; text-decoration: none;">CYBERAIDEFENSES.COM</a></div>
         <div style="display: flex; gap: 30px; align-items: center;">
-            <a href="index.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Home</a>
-            <a href="solutions.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Solutions</a>
-            <a href="platform.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Platform</a>
-            <a href="pricing.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Pricing</a>
-            <a href="contact.html" style="color: #ffffff; background: #38bdf8; padding: 8px 20px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: bold;">CONTACT</a>
+            <a href="index.html" style="color: #9ca3af; text-decoration: none;">Home</a>
+            <a href="solutions.html" style="color: #9ca3af; text-decoration: none;">Solutions</a>
+            <a href="platform.html" style="color: #9ca3af; text-decoration: none;">Platform</a>
+            <a href="trust.html" style="color: #ffffff; text-decoration: none;">Trust Center</a>
+            <a href="pricing.html" style="color: #9ca3af; text-decoration: none;">Pricing</a>
+            <a href="contact.html" style="color: #ffffff; background: #38bdf8; padding: 8px 20px; border-radius: 4px; text-decoration: none; font-weight: bold;">CONTACT</a>
         </div>
     </nav>
 
-    <header style="text-align: center; padding: 80px 20px;">
-        <h1 style="font-size: 3rem; margin: 0;">Trust & Compliance</h1>
-        <p style="color: #9ca3af; margin-top: 15px;">Enterprise-grade security standards for modern infrastructure.</p>
+    <header class="hero">
+        <div class="container">
+            <h1 style="font-size: 3.5rem; margin-bottom: 20px; letter-spacing: -0.02em;">Trust & Compliance</h1>
+            <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">Enterprise-grade security standards for modern infrastructure.</p>
+        </div>
     </header>
 
-    <main style="max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
-            <div>
-                <h3 style="color: #38bdf8;">AWS Shared Responsibility</h3>
-                <p style="color: #cbd5e1; line-height: 1.6;">We build exclusively on AWS, inheriting their world-class physical security while we manage the autonomous defense of your data layer and applications.</p>
+    <main class="container">
+        <div class="trust-grid">
+            <div class="trust-card">
+                <h3>AWS Shared Responsibility</h3>
+                <p>We build exclusively on AWS, inheriting their world-class physical security while we manage the autonomous defense of your data layer and applications.</p>
             </div>
-            <div>
-                <h3 style="color: #38bdf8;">Zero-Touch Privacy</h3>
-                <p style="color: #cbd5e1; line-height: 1.6;">Our autonomous engine processes threat data at the edge. Your sensitive business intelligence remains within your digital sovereignty—never stored on our servers.</p>
+            <div class="trust-card">
+                <h3>Zero-Touch Privacy</h3>
+                <p>Our autonomous engine processes threat data at the edge. Your sensitive business intelligence remains within your digital sovereignty—never stored on our servers.</p>
             </div>
-            <div>
-                <h3 style="color: #38bdf8;">Insurance-Ready Audits</h3>
-                <p style="color: #cbd5e1; line-height: 1.6;">Our logging protocols are engineered to meet the strict requirements of major cyber insurance providers, ensuring your firm remains compliant and covered.</p>
+            <div class="trust-card">
+                <h3>Insurance-Ready Audits</h3>
+                <p>Our logging protocols are engineered to meet the strict requirements of major cyber insurance providers, ensuring your firm remains compliant and covered.</p>
             </div>
-            <div>
-                <h3 style="color: #38bdf8;">Global Standards</h3>
-                <p style="color: #cbd5e1; line-height: 1.6;">Architected to align with NIST and SOC2 frameworks, providing the documentation needed for federal grants and institutional partnerships.</p>
+            <div class="trust-card">
+                <h3>Global Standards</h3>
+                <p>Architected to align with NIST and SOC2 frameworks, providing the documentation needed for federal grants and institutional partnerships.</p>
             </div>
         </div>
-
-        <section style="margin-top: 80px; background: #111827; border: 1px solid #1f2937; padding: 40px; border-radius: 16px; text-align: center;">
-            <h2 style="margin-top: 0;">Have Compliance Questions?</h2>
-            <p style="color: #9ca3af;">Our technical team can provide detailed documentation for your institutional lenders or grant applications.</p>
-            <a href="contact.html" style="display: inline-block; margin-top: 20px; color: #38bdf8; text-decoration: none; font-weight: bold;">Speak with an Engineer →</a>
-        </section>
     </main>
 
-    <footer style="padding: 60px 20px; border-top: 1px solid #1f2937; text-align: center; margin-top: 80px; color: #4b5563; font-size: 0.85rem;">
-        &copy; 2026 Cyberaidefenses LLC. All Rights Reserved.
+    <section class="cta-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Have Compliance Questions?</h2>
+            <p style="color: #9ca3af; font-size: 1.1rem; margin-bottom: 40px;">Our technical team can provide detailed documentation for your institutional lenders or grant applications.</p>
+            <a href="contact.html" style="background: #38bdf8; color: #0a0b10; padding: 18px 40px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">Speak with an Engineer</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <h3 style="color: #ffffff; margin-bottom: 20px;">CYBERAIDEFENSES.COM</h3>
+            <p style="max-width: 300px;">Autonomous defense infrastructure engineered for global enterprise resilience and digital sovereignty.</p>
+        </div>
+        <div>
+            <h4>Resources</h4>
+            <a href="solutions.html">Solutions</a>
+            <a href="platform.html">Platform</a>
+            <a href="trust.html">Trust Center</a>
+            <a href="pricing.html">Pricing</a>
+        </div>
+        <div>
+            <h4>Denver HQ</h4>
+            <p>1312 17th Street, Suite #230<br>Denver, CO 80202</p>
+            <p>720-355-5699</p>
+        </div>
     </footer>
+    <div style="text-align: center; padding: 40px; background: #0a0b10; color: #4b5563; font-size: 0.8rem; border-top: 1px solid #1f2937;">
+        &copy; 2026 Cyberaidefenses LLC. All Rights Reserved.
+    </div>
 </body>
 </html>
