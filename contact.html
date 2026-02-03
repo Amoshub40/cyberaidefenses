@@ -30,20 +30,26 @@
                 <p style="color: #9ca3af; margin-top: 20px;">1312 17th Street, Suite #230<br>Denver, CO 80202</p>
             </div>
 
-            <form action="mailto:amos@cyberaidefenses.com" method="post" enctype="text/plain" style="background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937;">
-                <h2 style="color: #ffffff; margin-bottom: 20px;">Send a Message</h2>
-                <input type="text" name="Name" placeholder="Your Name" required style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
+            <form action="https://api.web3forms.com/submit" method="POST" style="background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937;">
+                <h2 style="color: #ffffff; margin-bottom: 20px;">Secure Inquiry</h2>
+                <p style="color: #9ca3af; margin-bottom: 30px; font-size: 0.9rem;">Securely transmit your requirements to our engineering team.</p>
+
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                 
-                <select name="Cloud" required style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
+                <input type="text" name="name" placeholder="Full Name" required style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
+                
+                <input type="email" name="email" placeholder="Work Email" required style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
+
+                <select name="Infrastructure" required style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
                     <option value="" disabled selected>Select Infrastructure</option>
                     <option value="AWS">AWS</option>
                     <option value="Azure">Azure</option>
                     <option value="GCP">GCP</option>
                 </select>
 
-                <textarea name="Message" placeholder="How can we help?" rows="4" required style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;"></textarea>
+                <textarea name="message" placeholder="How can we help?" rows="4" required style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;"></textarea>
                 
-                <button type="submit" style="width: 100%; padding: 18px; background: #38bdf8; color: #0f172a; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-transform: uppercase;">Send Direct Email</button>
+                <button type="submit" style="width: 100%; padding: 18px; background: #38bdf8; color: #0f172a; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-transform: uppercase;">Submit Secure Inquiry</button>
             </form>
         </div>
     </main>
