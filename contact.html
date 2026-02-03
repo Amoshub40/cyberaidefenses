@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Contact | Cyberaidefenses</title>
     <style>
         body { background-color: #0a0b10; color: #ffffff; font-family: 'Inter', sans-serif; margin: 0; }
@@ -11,9 +12,12 @@
         .footer { padding: 60px 40px; border-top: 1px solid #1f2937; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
         
         /* Form Styling */
-        .form-card { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 40px; max-width: 600px; margin: 0 auto; }
-        input, select, textarea { width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #1f2937; background: #0a0b10; color: white; box-sizing: border-box; margin-bottom: 16px; font-family: inherit; }
-        .btn-submit { width: 100%; padding: 16px; background: #38bdf8; color: #0a0b10; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
+        .form-card { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 40px; max-width: 600px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        input, select, textarea { width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #1f2937; background: #0a0b10; color: white; box-sizing: border-box; margin-bottom: 16px; font-family: inherit; transition: border 0.3s; }
+        input:focus, select:focus, textarea:focus { border-color: #38bdf8; outline: none; }
+        
+        .btn-submit { width: 100%; padding: 16px; background: #38bdf8; color: #0a0b10; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        .btn-submit:hover { background: #7dd3fc; transform: translateY(-1px); }
         
         a { text-decoration: none; transition: 0.3s; color: inherit; }
         .footer a:hover { color: #38bdf8; }
@@ -37,11 +41,12 @@
     <main class="container">
         <div class="form-card">
             <div id="form-container">
-                <h2 style="margin-top: 0; color: #38bdf8;">Secure Inquiry</h2>
-                <form action="mailto:amos@cyberaidefenses.com" method="post" enctype="text/plain" onsubmit="handleSuccess()">
+                <h2 style="margin-top: 0; color: #38bdf8; font-size: 1.8rem;">Secure Inquiry</h2>
+                <form action="mailto:amos@cyberaidefenses.com" method="POST" enctype="text/plain" onsubmit="handleSuccess()">
                     <input type="text" name="Name" placeholder="Full Name" autocomplete="name" required>
                     <input type="text" name="Company" placeholder="Company Name" autocomplete="organization" required>
                     <input type="email" name="Email" placeholder="Work Email" autocomplete="email" required>
+                    
                     <select name="Environment" required>
                         <option value="" disabled selected>Select Infrastructure Environment</option>
                         <option value="AWS">Amazon Web Services (AWS)</option>
@@ -49,13 +54,15 @@
                         <option value="GCP">Google Cloud Platform (GCP)</option>
                         <option value="Hybrid">Hybrid / On-Premise</option>
                     </select>
+
                     <textarea name="Message" placeholder="How can we help you?" rows="4" required></textarea>
                     <button type="submit" class="btn-submit">Send Direct Email</button>
                 </form>
             </div>
+
             <div id="success-message" style="display: none; text-align: center; padding: 20px 0;">
                 <div style="font-size: 3rem; margin-bottom: 20px;">🛡️</div>
-                <h2>Inquiry Initiated</h2>
+                <h2 style="color: #38bdf8;">Inquiry Initiated</h2>
                 <p style="color: #9ca3af;">Please click 'Send' in your mail application to complete the request.</p>
                 <button onclick="location.reload()" style="background: transparent; color: #38bdf8; border: 1px solid #38bdf8; padding: 10px 20px; border-radius: 6px; cursor: pointer; margin-top: 15px;">Back to Form</button>
             </div>
