@@ -4,95 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platform | Cyberaidefenses</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { background-color: #0a0b10; color: #ffffff; font-family: 'Inter', sans-serif; margin: 0; }
+        .nav-bar { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .hero { text-align: center; padding: 100px 0; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%); }
+        .platform-feature { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding: 80px 0; }
+        .feature-text h2 { font-size: 2.5rem; margin-bottom: 20px; color: #38bdf8; }
+        .feature-text p { color: #9ca3af; line-height: 1.8; font-size: 1.1rem; }
+        .feature-img { width: 100%; border-radius: 12px; border: 1px solid #1f2937; box-shadow: 0 0 30px rgba(56, 189, 248, 0.1); }
+        .cta-section { background: #111827; padding: 100px 20px; text-align: center; border-top: 1px solid #1f2937; }
+        .footer { padding: 80px 40px; background: #0a0b10; border-top: 1px solid #1f2937; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+        .footer h4 { color: #ffffff; margin-bottom: 20px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        .footer p, .footer a { color: #9ca3af; text-decoration: none; font-size: 0.9rem; line-height: 1.6; display: block; margin-bottom: 10px; }
+    </style>
 </head>
 <body>
-   <nav style="padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937;">
-    <div style="font-weight: bold; letter-spacing: 1px;">
-        <a href="index.html" style="color: #ffffff; text-decoration: none;">CYBERAIDEFENSES.COM</a>
-    </div>
+    <nav class="nav-bar">
+        <div style="font-weight: bold;"><a href="index.html" style="color: #ffffff; text-decoration: none;">CYBERAIDEFENSES.COM</a></div>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html" style="color: #9ca3af; text-decoration: none;">Home</a>
+            <a href="solutions.html" style="color: #9ca3af; text-decoration: none;">Solutions</a>
+            <a href="platform.html" style="color: #ffffff; text-decoration: none;">Platform</a>
+            <a href="trust.html" style="color: #9ca3af; text-decoration: none;">Trust Center</a>
+            <a href="pricing.html" style="color: #9ca3af; text-decoration: none;">Pricing</a>
+            <a href="contact.html" style="color: #ffffff; background: #38bdf8; padding: 8px 20px; border-radius: 4px; text-decoration: none; font-weight: bold;">CONTACT</a>
+        </div>
+    </nav>
 
-    <div style="display: flex; gap: 30px; align-items: center;">
-        <a href="index.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Home</a>
-        <a href="solutions.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Solutions</a>
-        <a href="platform.html" style="color: #38bdf8; text-decoration: none; font-size: 0.9rem;">Platform</a>
-        <a href="trust.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Trust Center</a>
-        <a href="pricing.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Pricing</a>
-        <a href="contact.html" style="color: #ffffff; background: #38bdf8; padding: 8px 20px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: bold;">CONTACT</a>
-    </div>
-</nav>
-    <header style="text-align: center; padding: 120px 40px; background: linear-gradient(180deg, #0f172a 0%, #0a0b10 100%);">
-        <h1 style="font-size: 3.5rem; margin-bottom: 24px; color: #ffffff; letter-spacing: -0.02em;">The Autonomous Engine</h1>
-        <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">
-            Engineered for the modern SMB, our platform transforms standard <strong>AWS</strong> environments into self-defending fortresses by eliminating the "human delay."
-        </p>
+    <header class="hero">
+        <div class="container">
+            <h1 style="font-size: 4rem; margin-bottom: 20px; letter-spacing: -0.02em;">The Defense Engine</h1>
+            <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">Autonomous infrastructure engineered for global enterprise resilience and digital sovereignty.</p>
+        </div>
     </header>
 
-    <main class="container" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 80px; padding: 40px; background: #111827; border-radius: 20px; border: 1px solid #1f2937;">
-            <div>
-                <h2 style="color: #38bdf8; margin-top: 0;">Native AWS Optimization</h2>
-                <p style="color: #cbd5e1; line-height: 1.8;">
-                    Most SMBs assume <strong>Amazon Web Services (AWS)</strong> handles all security. While AWS secures the infrastructure, <em>you</em> are responsible for the data.
-                </p>
-                <p style="color: #cbd5e1; line-height: 1.8;">
-                    Our platform integrates directly with your <strong>AWS</strong> environment—securing EC2, S3, and Lambda instances with the same autonomous intelligence used by the Fortune 300.
-                </p>
+    <main class="container">
+        <section class="platform-feature">
+            <div class="feature-text">
+                <h2>Proprietary Engine</h2>
+                <p>Our core logic layer operates at the kernel level, identifying anomalies in millisecond intervals. Unlike traditional software, our engine evolves with your network, creating a unique biological-style defense for your digital assets.</p>
             </div>
-            <div style="text-align: center; border-left: 1px solid #1f2937; padding-left: 40px;">
-                <div style="font-size: 0.8rem; color: #38bdf8; margin-bottom: 10px; letter-spacing: 2px; text-transform: uppercase;">Secure Partnership</div>
-                <div style="font-size: 1.5rem; font-weight: bold; color: #ffffff;">Cyberaidefenses + AWS</div>
-                <div style="margin-top: 20px; height: 2px; background: linear-gradient(90deg, transparent, #38bdf8, transparent);"></div>
-            </div>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
-            <div style="padding: 30px; background: #0f172a; border-radius: 12px; border: 1px solid #1e293b;">
-                <h3 style="color: #38bdf8; margin-top: 0;">Autonomous Detection</h3>
-                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6;">Our engine doesn't wait for a human to see an alert. It identifies and neutralizes threats in milliseconds, stopping exfiltration before it starts.</p>
-            </div>
-            <div style="padding: 30px; background: #0f172a; border-radius: 12px; border: 1px solid #1e293b;">
-                <h3 style="color: #38bdf8; margin-top: 0;">Plug-and-Play Integration</h3>
-                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6;">Zero friction deployment. Our tools work with your existing <strong>AWS</strong>, Office 365, and Google stacks without needing a custom server farm.</p>
-            </div>
-            <div style="padding: 30px; background: #0f172a; border-radius: 12px; border: 1px solid #1e293b;">
-                <h3 style="color: #38bdf8; margin-top: 0;">Self-Healing Architecture</h3>
-                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6;">The ultimate defense against ransomware. The system automatically rolls back unauthorized changes to ensure business continuity without data loss.</p>
-            </div>
-        </div>
+            <img src="https://images.unsplash.com/photo-1518433278981-16757d60c9b0?auto=format&fit=crop&q=80&w=800" class="feature-img" alt="Proprietary Engine">
+        </section>
     </main>
-    <footer style="padding: 80px 20px; background: #0a0b10; border-top: 1px solid #1f2937; margin-top: 60px;">
-        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: left; max-width: 1200px; margin: 0 auto;">
-            <div>
-                <div style="color: #ffffff; font-weight: bold; margin-bottom: 20px; letter-spacing: 0.05em;">CYBERAIDEFENSES.COM</div>
-                <p style="color: #9ca3af; font-size: 0.85rem; line-height: 1.6;">Autonomous defense infrastructure engineered for global enterprise resilience and digital sovereignty.</p>
-            </div>
-            <div>
-                <h4 style="color: #ffffff; margin-bottom: 20px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;">Solutions</h4>
-                <ul style="list-style: none; padding: 0; font-size: 0.85rem; line-height: 2.2;">
-                    <li><a href="solutions.html" style="color: #9ca3af; text-decoration: none;">Strategic Framework</a></li>
-                    <li><a href="platform.html" style="color: #9ca3af; text-decoration: none;">Proprietary Engine</a></li>
-                    <li><a href="compliance.html" style="color: #9ca3af; text-decoration: none;">Trust Center</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 style="color: #ffffff; margin-bottom: 20px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;">Denver Headquarters</h4>
-                <p style="color: #9ca3af; font-size: 0.85rem; line-height: 1.6;">1312 17th Street, Suite #230<br>Denver, CO 80202</p>
-                <p style="color: #38bdf8; font-size: 0.85rem; margin-top: 10px;">720-355-5699</p>
-            </div>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 style="font-size: 3rem; margin-bottom: 20px;">Ready to Secure Your AWS Environment?</h2>
+            <p style="color: #9ca3af; font-size: 1.2rem; margin-bottom: 40px;">Join the modern SMBs using autonomous defense to eliminate human delay and stop ransomware in its tracks.</p>
+            <a href="pricing.html" style="background: #38bdf8; color: #0a0b10; padding: 18px 40px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-block;">View SMB Pricing Plans</a>
         </div>
-        <div style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #1f2937;">
-            <p style="color: #4b5563; font-size: 0.8rem;">&copy; 2026 Cyberaidefenses LLC. All Rights Reserved.</p>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <h3 style="color: #ffffff; margin-bottom: 20px;">CYBERAIDEFENSES.COM</h3>
+            <p style="max-width: 300px;">Autonomous defense infrastructure engineered for global enterprise resilience and digital sovereignty.</p>
         </div>
-        <section style="text-align: center; padding: 60px 20px; background: #0f172a; border-top: 1px solid #1f2937;">
-    <h2 style="font-size: 2rem; margin-bottom: 20px;">Ready to Secure Your AWS Environment?</h2>
-    <p style="color: #9ca3af; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
-        Join the modern SMBs using autonomous defense to eliminate human delay and stop ransomware in its tracks.
-    </p>
-    <a href="pricing.html" style="display: inline-block; background: #38bdf8; color: #0f172a; text-decoration: none; padding: 15px 40px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; transition: transform 0.2s;">
-        View SMB Pricing Plans
-    </a>
-</section>
+        <div>
+            <h4>Solutions</h4>
+            <a href="solutions.html">Strategic Framework</a>
+            <a href="platform.html">Proprietary Engine</a>
+            <a href="trust.html">Trust Center</a>
+        </div>
+        <div>
+            <h4>Denver Headquarters</h4>
+            <p>1312 17th Street, Suite #230<br>Denver, CO 80202</p>
+            <p>720-355-5699</p>
+        </div>
     </footer>
+    <div style="text-align: center; padding: 40px; background: #0a0b10; color: #4b5563; font-size: 0.8rem; border-top: 1px solid #1f2937;">
+        &copy; 2026 Cyberaidefenses LLC. All Rights Reserved.
+    </div>
 </body>
 </html>
