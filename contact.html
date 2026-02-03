@@ -20,59 +20,32 @@
         </div>
     </nav>
 
-    <header style="text-align: center; padding: 80px 40px; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%);">
-        <h1 style="font-size: 3.5rem; margin-bottom: 24px; color: #ffffff; letter-spacing: -0.02em;">Secure Communication</h1>
-        <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">Connect with our technical team in Denver to discuss autonomous defense integration.</p>
-    </header>
-
-    <main style="max-width: 1200px; margin: 0 auto; padding-bottom: 100px; padding-left: 20px; padding-right: 20px;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; align-items: start;">
+    <main style="max-width: 1200px; margin: 80px auto; padding: 0 20px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
             
             <div style="background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937;">
                 <h2 style="color: #ffffff; margin-bottom: 30px;">Direct Channels</h2>
-                <div style="margin-bottom: 25px;">
-                    <h4 style="color: #38bdf8; margin-bottom: 5px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em;">Professional Inquiries</h4>
-                    <p style="color: #ffffff; font-size: 1.1rem; margin-bottom: 8px;">amos@cyberaidefenses.com</p>
-                </div>
-                <div style="margin-bottom: 25px;">
-                    <h4 style="color: #38bdf8; margin-bottom: 5px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em;">Phone</h4>
-                    <p style="color: #ffffff; font-size: 1.1rem;">720-355-5699</p>
-                </div>
-                <div>
-                    <h4 style="color: #38bdf8; margin-bottom: 5px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em;">Headquarters</h4>
-                    <p style="color: #9ca3af; line-height: 1.6;">1312 17th Street, Suite #230<br>Denver, CO 80202</p>
-                </div>
+                <p style="color: #38bdf8; font-weight: bold;">amos@cyberaidefenses.com</p>
+                <p style="color: #ffffff;">720-355-5699</p>
+                <p style="color: #9ca3af; margin-top: 20px;">1312 17th Street, Suite #230<br>Denver, CO 80202</p>
             </div>
 
-            <form action="mailto:amos@cyberaidefenses.com?subject=Technical Audit Inquiry" method="post" enctype="text/plain" style="background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937;">
-                <h2 style="color: #ffffff; margin-bottom: 20px;">Get in Touch</h2>
-                <p style="color: #9ca3af; margin-bottom: 30px; font-size: 0.9rem;">Fill this out to send a direct email to our engineering team.</p>
+            <form action="mailto:amos@cyberaidefenses.com" method="post" enctype="text/plain" style="background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937;">
+                <h2 style="color: #ffffff; margin-bottom: 20px;">Send a Message</h2>
+                <input type="text" name="Name" placeholder="Your Name" required style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
                 
-                <div style="margin-bottom: 20px;">
-                    <input type="text" name="Name" placeholder="Your Name" required style="width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
-                </div>
+                <select name="Cloud" required style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
+                    <option value="" disabled selected>Select Infrastructure</option>
+                    <option value="AWS">AWS</option>
+                    <option value="Azure">Azure</option>
+                    <option value="GCP">GCP</option>
+                </select>
+
+                <textarea name="Message" placeholder="How can we help?" rows="4" required style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;"></textarea>
                 
-                <div style="margin-bottom: 20px;">
-                    <select name="Infrastructure" required style="width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
-                        <option value="" disabled selected>Select Your Cloud Environment</option>
-                        <option value="AWS">AWS</option>
-                        <option value="Azure">Azure</option>
-                        <option value="GCP">GCP</option>
-                        <option value="Other">Other / Hybrid</option>
-                    </select>
-                </div>
-                
-                <div style="margin-bottom: 25px;">
-                    <textarea name="Message" placeholder="How can we help you?" rows="4" required style="width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;"></textarea>
-                </div>
-                
-                <button type="submit" style="width: 100%; padding: 18px; background: #38bdf8; color: #0f172a; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px;">Send Direct Email</button>
+                <button type="submit" style="width: 100%; padding: 18px; background: #38bdf8; color: #0f172a; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-transform: uppercase;">Send Direct Email</button>
             </form>
         </div>
     </main>
-
-    <footer style="padding: 60px 0; text-align: center; border-top: 1px solid #1f2937;">
-        <p style="color: #4b5563;">&copy; 2026 Cyberaidefenses LLC. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
