@@ -11,14 +11,25 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
         .footer { padding: 60px 40px; border-top: 1px solid #1f2937; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
         
-        /* Form Styling */
+        /* Form Card Styling */
         .form-card { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 40px; max-width: 600px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        input, select, textarea { width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #1f2937; background: #0a0b10; color: white; box-sizing: border-box; margin-bottom: 16px; font-family: inherit; transition: border 0.3s; }
-        input:focus, select:focus, textarea:focus { border-color: #38bdf8; outline: none; }
+        h2 { color: #38bdf8; margin-top: 0; font-size: 1.8rem; letter-spacing: -0.02em; }
         
-        .btn-submit { width: 100%; padding: 16px; background: #38bdf8; color: #0a0b10; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
-        .btn-submit:hover { background: #7dd3fc; transform: translateY(-1px); }
+        /* Autofill-Enabled Inputs */
+        input, select, textarea { 
+            width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #1f2937; 
+            background: #0a0b10; color: white; box-sizing: border-box; margin-bottom: 16px; 
+            font-family: inherit; transition: all 0.3s ease; 
+        }
+        input:focus, select:focus, textarea:focus { border-color: #38bdf8; outline: none; background: #0d1117; }
         
+        .btn-submit { 
+            width: 100%; padding: 18px; background: #38bdf8; color: #0a0b10; border: none; 
+            border-radius: 8px; font-weight: 700; cursor: pointer; text-transform: uppercase; 
+            letter-spacing: 1px; transition: 0.3s ease; 
+        }
+        .btn-submit:hover { background: #7dd3fc; transform: translateY(-2px); }
+
         a { text-decoration: none; transition: 0.3s; color: inherit; }
         .footer a:hover { color: #38bdf8; }
 
@@ -41,13 +52,13 @@
     <main class="container">
         <div class="form-card">
             <div id="form-container">
-                <h2 style="margin-top: 0; color: #38bdf8; font-size: 1.8rem;">Secure Inquiry</h2>
-                <form action="mailto:amos@cyberaidefenses.com" method="POST" enctype="text/plain" onsubmit="handleSuccess()">
-                    <input type="text" name="Name" placeholder="Full Name" autocomplete="name" required>
-                    <input type="text" name="Company" placeholder="Company Name" autocomplete="organization" required>
-                    <input type="email" name="Email" placeholder="Work Email" autocomplete="email" required>
+                <h2>Secure Inquiry</h2>
+                <form id="secureForm">
+                    <input type="text" id="name" name="name" placeholder="Full Name" autocomplete="name" required>
+                    <input type="text" id="company" name="company" placeholder="Company Name" autocomplete="organization" required>
+                    <input type="email" id="email" name="email" placeholder="Work Email" autocomplete="email" required>
                     
-                    <select name="Environment" required>
+                    <select id="env" name="environment" required>
                         <option value="" disabled selected>Select Infrastructure Environment</option>
                         <option value="AWS">Amazon Web Services (AWS)</option>
                         <option value="Azure">Microsoft Azure</option>
@@ -55,16 +66,16 @@
                         <option value="Hybrid">Hybrid / On-Premise</option>
                     </select>
 
-                    <textarea name="Message" placeholder="How can we help you?" rows="4" required></textarea>
+                    <textarea id="msg" name="message" placeholder="How can we help you?" rows="4" required></textarea>
                     <button type="submit" class="btn-submit">Send Direct Email</button>
                 </form>
             </div>
 
             <div id="success-message" style="display: none; text-align: center; padding: 20px 0;">
-                <div style="font-size: 3rem; margin-bottom: 20px;">🛡️</div>
+                <div style="font-size: 3.5rem; margin-bottom: 20px;">🛡️</div>
                 <h2 style="color: #38bdf8;">Inquiry Initiated</h2>
-                <p style="color: #9ca3af;">Please click 'Send' in your mail application to complete the request.</p>
-                <button onclick="location.reload()" style="background: transparent; color: #38bdf8; border: 1px solid #38bdf8; padding: 10px 20px; border-radius: 6px; cursor: pointer; margin-top: 15px;">Back to Form</button>
+                <p style="color: #9ca3af; line-height: 1.6;">Your secure mail application has been launched.<br>Please click 'Send' in your app to complete the request.</p>
+                <button onclick="location.reload()" style="background: transparent; color: #38bdf8; border: 1px solid #38bdf8; padding: 12px 24px; border-radius: 6px; cursor: pointer; margin-top: 15px; font-weight: 600;">Back to Form</button>
             </div>
         </div>
     </main>
@@ -97,12 +108,33 @@
     </div>
 
     <script>
-        function handleSuccess() {
+        document.getElementById('secureForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const company = document.getElementById('company').value;
+            const email = document.getElementById('email').value;
+            const env = document.getElementById('env').value;
+            const msg = document.getElementById('msg').value;
+            
+            // Generate professional mailto link body
+            const subject = encodeURIComponent("Secure Inquiry: " + company);
+            const body = encodeURIComponent(
+                "Name: " + name + "\n" +
+                "Company: " + company + "\n" +
+                "Email: " + email + "\n" +
+                "Environment: " + env + "\n\n" +
+                "Message:\n" + msg
+            );
+            
+            window.location.href = "mailto:amos@cyberaidefenses.com?subject=" + subject + "&body=" + body;
+
+            // Show success UI
             setTimeout(() => {
                 document.getElementById('form-container').style.display = 'none';
                 document.getElementById('success-message').style.display = 'block';
             }, 500);
-        }
+        });
     </script>
 </body>
 </html>
