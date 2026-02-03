@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inquiry Received | Cyberaidefenses</title>
+    <title>Contact | Cyberaidefenses</title>
 </head>
-<body style="background-color: #0a0b10; color: #ffffff; font-family: sans-serif; margin: 0; display: flex; flex-direction: column; min-height: 100vh;">
+<body style="background-color: #0a0b10; color: #ffffff; font-family: sans-serif; margin: 0;">
     <nav style="padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937;">
         <div style="font-weight: bold; letter-spacing: 1px;">
             <a href="index.html" style="color: #ffffff; text-decoration: none;">CYBERAIDEFENSES.COM</a>
@@ -20,19 +20,63 @@
         </div>
     </nav>
 
-    <main style="flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 40px;">
-        <div style="max-width: 600px; text-align: center; background: #111827; padding: 60px; border-radius: 16px; border: 1px solid #38bdf8; box-shadow: 0 0 30px rgba(56, 189, 248, 0.1);">
-            <div style="width: 80px; height: 80px; background: rgba(56, 189, 248, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px;">
-                <span style="color: #38bdf8; font-size: 40px;">✓</span>
+    <header style="text-align: center; padding: 80px 40px; background: linear-gradient(180deg, #0a0b10 0%, #111827 100%);">
+        <h1 style="font-size: 3.5rem; margin-bottom: 24px; color: #ffffff; letter-spacing: -0.02em;">Secure Communication</h1>
+        <p style="color: #9ca3af; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">Connect with our technical team in Denver to discuss autonomous defense integration.</p>
+    </header>
+
+    <main style="max-width: 1200px; margin: 0 auto; padding-bottom: 100px; padding-left: 20px; padding-right: 20px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; align-items: start;">
+            
+            <div style="background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937;">
+                <h2 style="color: #ffffff; margin-bottom: 30px;">Direct Channels</h2>
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #38bdf8; margin-bottom: 5px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em;">Professional Inquiries</h4>
+                    <p style="color: #ffffff; font-size: 1.1rem; margin-bottom: 8px;">amos@cyberaidefenses.com</p>
+                </div>
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #38bdf8; margin-bottom: 5px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em;">Phone</h4>
+                    <p style="color: #ffffff; font-size: 1.1rem;">720-355-5699</p>
+                </div>
+                <div>
+                    <h4 style="color: #38bdf8; margin-bottom: 5px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em;">Headquarters</h4>
+                    <p style="color: #9ca3af; line-height: 1.6;">1312 17th Street, Suite #230<br>Denver, CO 80202</p>
+                </div>
             </div>
-            <h1 style="font-size: 2.5rem; margin-bottom: 20px; letter-spacing: -0.02em;">Audit Request Received</h1>
-            <p style="color: #9ca3af; font-size: 1.1rem; line-height: 1.6; margin-bottom: 40px;">Thank you for initiating a consultation. Our technical team is reviewing your environment details and will reach out via email within 24 hours.</p>
-            <a href="index.html" style="display: inline-block; padding: 15px 40px; border: 1px solid #38bdf8; color: #38bdf8; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.3s ease;">Return to Dashboard</a>
+
+            <form action="https://formspree.io/f/your_form_id" method="POST" style="background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937;">
+                <h2 style="color: #ffffff; margin-bottom: 30px;">Inquiry Form</h2>
+                <input type="hidden" name="_next" value="https://cyberaidefenses.com/thank-you.html">
+                
+                <div style="margin-bottom: 20px;">
+                    <label style="color: #ffffff; display: block; margin-bottom: 8px; font-size: 0.9rem;">Full Name</label>
+                    <input type="text" name="name" required style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label style="color: #ffffff; display: block; margin-bottom: 8px; font-size: 0.9rem;">Email Address</label>
+                    <input type="email" name="email" required style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label style="color: #ffffff; display: block; margin-bottom: 8px; font-size: 0.9rem;">Cloud Environment</label>
+                    <select name="environment" required style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
+                        <option value="" disabled selected>Select Infrastructure</option>
+                        <option value="aws">AWS</option>
+                        <option value="azure">Azure</option>
+                        <option value="gcp">GCP</option>
+                        <option value="hybrid">Hybrid/On-Premise</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 25px;">
+                    <label style="color: #ffffff; display: block; margin-bottom: 8px; font-size: 0.9rem;">Message</label>
+                    <textarea name="message" rows="4" required style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;"></textarea>
+                </div>
+                <button type="submit" style="width: 100%; padding: 16px; background: #38bdf8; color: #0f172a; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 1rem; text-transform: uppercase;">Initialize Consultation</button>
+            </form>
         </div>
     </main>
 
-    <footer style="padding: 40px 0; text-align: center; border-top: 1px solid #1f2937;">
-        <p style="color: #4b5563; font-size: 0.85rem;">&copy; 2026 Cyberaidefenses LLC. All Rights Reserved.</p>
+    <footer style="padding: 60px 0; text-align: center; border-top: 1px solid #1f2937;">
+        <p style="color: #4b5563;">&copy; 2026 Cyberaidefenses LLC. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
