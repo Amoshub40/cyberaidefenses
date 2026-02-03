@@ -1,51 +1,105 @@
-<div id="form-container">
-    <form action="mailto:amos@cyberaidefenses.com" method="post" enctype="text/plain" onsubmit="showSuccess()" style="background: #111827; padding: 40px; border-radius: 12px; border: 1px solid #1f2937; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #ffffff; margin-bottom: 20px; font-family: 'Inter', sans-serif;">Secure Inquiry</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cyberaidefenses</title>
+    <style>
+        body { background-color: #0a0b10; color: #ffffff; font-family: 'Inter', sans-serif; margin: 0; }
+        .nav-bar { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
         
-        <div style="margin-bottom: 20px;">
-            <input type="text" name="Name" placeholder="Full Name" required style="width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
-        </div>
+        .form-card { 
+            background: #111827; 
+            border: 1px solid #1f2937; 
+            border-radius: 12px; 
+            padding: 40px; 
+            max-width: 600px; 
+            margin: 0 auto;
+        }
 
-        <div style="margin-bottom: 20px;">
-            <input type="text" name="Company" placeholder="Company Name" required style="width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
-        </div>
-        
-        <div style="margin-bottom: 20px;">
-            <input type="email" name="Email" placeholder="Work Email" required style="width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;">
-        </div>
+        input, select, textarea {
+            width: 100%; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border: 1px solid #1f2937; 
+            background: #0a0b10; 
+            color: white; 
+            box-sizing: border-box; 
+            margin-bottom: 16px;
+            font-family: inherit;
+        }
 
-        <div style="margin-bottom: 20px;">
-            <select name="Environment" required style="width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: #9ca3af; box-sizing: border-box; appearance: none; cursor: pointer;">
-                <option value="" disabled selected>Select Infrastructure Environment</option>
-                <option value="AWS">Amazon Web Services (AWS)</option>
-                <option value="Azure">Microsoft Azure</option>
-                <option value="GCP">Google Cloud Platform (GCP)</option>
-                <option value="Hybrid">Hybrid / On-Premise</option>
-                <option value="Other">Other</option>
-            </select>
+        .btn-submit {
+            width: 100%; 
+            padding: 16px; 
+            background: #38bdf8; 
+            color: #0a0b10; 
+            border: none; 
+            border-radius: 8px; 
+            font-weight: 700; 
+            cursor: pointer; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-bar { flex-direction: column; gap: 15px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div style="font-weight: bold;"><a href="index.html" style="color: #ffffff; text-decoration: none;">CYBERAIDEFENSES.COM</a></div>
+        <div style="display: flex; gap: 25px; align-items: center; flex-wrap: wrap; justify-content: center;">
+            <a href="index.html" style="color: #9ca3af; text-decoration: none; font-size: 0.85rem;">Home</a>
+            <a href="solutions.html" style="color: #9ca3af; text-decoration: none; font-size: 0.85rem;">Solutions</a>
+            <a href="platform.html" style="color: #9ca3af; text-decoration: none; font-size: 0.85rem;">Platform</a>
+            <a href="trust.html" style="color: #9ca3af; text-decoration: none; font-size: 0.85rem;">Trust Center</a>
+            <a href="pricing.html" style="color: #9ca3af; text-decoration: none; font-size: 0.85rem;">Pricing</a>
+            <a href="contact.html" style="color: #ffffff; background: #38bdf8; padding: 6px 15px; border-radius: 4px; text-decoration: none; font-size: 0.85rem; font-weight: bold;">CONTACT</a>
         </div>
+    </nav>
 
-        <div style="margin-bottom: 25px;">
-            <textarea name="Message" placeholder="How can we help you?" rows="4" required style="width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box;"></textarea>
+    <main class="container">
+        <div id="form-wrapper" class="form-card">
+            <div id="form-container">
+                <h2 style="margin-top: 0;">Secure Inquiry</h2>
+                <form action="mailto:amos@cyberaidefenses.com" method="post" enctype="text/plain" onsubmit="handleSuccess()">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="text" name="Company" placeholder="Company Name" required>
+                    <input type="email" name="Email" placeholder="Work Email" required>
+                    
+                    <select name="Environment" required>
+                        <option value="" disabled selected>Select Infrastructure Environment</option>
+                        <option value="AWS">Amazon Web Services (AWS)</option>
+                        <option value="Azure">Microsoft Azure</option>
+                        <option value="GCP">Google Cloud Platform (GCP)</option>
+                        <option value="Hybrid">Hybrid / On-Premise</option>
+                    </select>
+
+                    <textarea name="Message" placeholder="How can we help you?" rows="4" required></textarea>
+                    
+                    <button type="submit" class="btn-submit">Send Direct Email</button>
+                </form>
+            </div>
+
+            <div id="success-message" style="display: none; text-align: center; padding: 20px 0;">
+                <div style="font-size: 3rem; margin-bottom: 20px;">🛡️</div>
+                <h2>Inquiry Initiated</h2>
+                <p style="color: #9ca3af;">Your email app has been launched. Please click 'Send' in your mail application.</p>
+                <button onclick="location.reload()" style="background: transparent; color: #38bdf8; border: 1px solid #38bdf8; padding: 10px 20px; border-radius: 6px; cursor: pointer; margin-top: 15px;">Back to Form</button>
+            </div>
         </div>
-        
-        <button type="submit" style="width: 100%; padding: 18px; background: #38bdf8; color: #0f172a; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1rem; text-transform: uppercase; font-family: 'Inter', sans-serif;">Send Direct Email</button>
-    </form>
-</div>
+    </main>
 
-<div id="success-message" style="display: none; background: #111827; padding: 60px 40px; border-radius: 12px; border: 1px solid #38bdf8; max-width: 600px; margin: 0 auto; text-align: center;">
-    <div style="font-size: 3rem; margin-bottom: 20px;">✅</div>
-    <h2 style="color: #ffffff; margin-bottom: 10px;">Inquiry Initiated</h2>
-    <p style="color: #9ca3af; line-height: 1.6;">Your email application has been opened. Please click 'Send' in your mail app to complete the request.</p>
-    <button onclick="location.reload()" style="margin-top: 20px; background: transparent; border: 1px solid #1f2937; color: #38bdf8; padding: 10px 20px; border-radius: 6px; cursor: pointer;">Send Another</button>
-</div>
-
-<script>
-    function showSuccess() {
-        // Delay the visual change slightly so the mailto: link has time to trigger
-        setTimeout(function() {
-            document.getElementById('form-container').style.display = 'none';
-            document.getElementById('success-message').style.display = 'block';
-        }, 500);
-    }
-</script>
+    <script>
+        function handleSuccess() {
+            setTimeout(() => {
+                document.getElementById('form-container').style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
