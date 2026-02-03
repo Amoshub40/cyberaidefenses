@@ -4,64 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solutions | Cyberaidefenses</title>
+    <style>
+        body { background-color: #0a0b10; color: #ffffff; font-family: 'Inter', sans-serif; margin: 0; }
+        .nav-bar { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937; }
+        .solution-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+        .card { 
+            background: rgba(17, 24, 39, 0.8); 
+            border: 1px solid #1f2937; 
+            border-radius: 16px; 
+            overflow: hidden; 
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover { 
+            border-color: #38bdf8; 
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2); 
+            transform: translateY(-5px); 
+        }
+        .card-img { width: 100%; height: 200px; object-fit: cover; opacity: 0.8; }
+        .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .phase-label { color: #38bdf8; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block; }
+        .card h2 { font-size: 1.4rem; margin-bottom: 12px; letter-spacing: -0.02em; }
+        .card p { color: #9ca3af; line-height: 1.6; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1; }
+        .btn-action { color: #38bdf8; text-decoration: none; font-weight: bold; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; transition: gap 0.3s; }
+        .btn-action:hover { gap: 12px; }
+    </style>
 </head>
-<body style="background-color: #0a0b10; color: #ffffff; font-family: sans-serif; margin: 0;">
-    <nav style="padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937;">
-        <div style="font-weight: bold; letter-spacing: 1px;">
-            <a href="index.html" style="color: #ffffff; text-decoration: none;">CYBERAIDEFENSES.COM</a>
-        </div>
+<body>
+    <nav class="nav-bar">
+        <div style="font-weight: bold;"><a href="index.html" style="color: #ffffff; text-decoration: none;">CYBERAIDEFENSES.COM</a></div>
         <div style="display: flex; gap: 30px; align-items: center;">
-            <a href="index.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Home</a>
-            <a href="solutions.html" style="color: #38bdf8; text-decoration: none; font-size: 0.9rem;">Solutions</a>
-            <a href="platform.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Platform</a>
-            <a href="trust.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Trust Center</a>
-            <a href="pricing.html" style="color: #9ca3af; text-decoration: none; font-size: 0.9rem;">Pricing</a>
-            <a href="contact.html" style="color: #ffffff; background: #38bdf8; padding: 8px 20px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: bold;">CONTACT</a>
+            <a href="index.html" style="color: #9ca3af; text-decoration: none;">Home</a>
+            <a href="solutions.html" style="color: #ffffff; text-decoration: none;">Solutions</a>
+            <a href="platform.html" style="color: #9ca3af; text-decoration: none;">Platform</a>
+            <a href="trust.html" style="color: #9ca3af; text-decoration: none;">Trust Center</a>
+            <a href="pricing.html" style="color: #9ca3af; text-decoration: none;">Pricing</a>
+            <a href="contact.html" style="color: #ffffff; background: #38bdf8; padding: 8px 20px; border-radius: 4px; text-decoration: none; font-weight: bold;">CONTACT</a>
         </div>
     </nav>
 
     <header style="text-align: center; padding: 80px 20px;">
-        <h1 style="font-size: 3.5rem; margin: 0; letter-spacing: -0.02em;">Strategic Impact Framework</h1>
+        <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Strategic Impact Framework</h1>
+        <p style="color: #9ca3af; font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Four-stage autonomous integration for enterprise-grade resilience.</p>
     </header>
 
-    <main style="max-width: 1200px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-        <div style="background: #111827; border: 1px solid #1f2937; border-radius: 12px; overflow: hidden;">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" style="width: 100%; height: 200px; object-fit: cover;">
-            <div style="padding: 24px;">
-                <h3 style="color: #38bdf8; margin-top: 0;">Phase 1: Diagnostic</h3>
-                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6;">Holistic evaluation of cloud infrastructure and networks to map systemic risks.</p>
-                <a href="contact.html" style="color: #38bdf8; text-decoration: none; font-size: 0.9rem; font-weight: bold;">Learn More →</a>
+    <main class="solution-grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" class="card-img" alt="Diagnostic">
+            <div class="card-content">
+                <span class="phase-label">Phase 01</span>
+                <h2>Diagnostic</h2>
+                <p>Holistic evaluation of cloud infrastructure and networks to map systemic risks.</p>
+                <a href="contact.html" class="btn-action">Learn More →</a>
             </div>
         </div>
 
-        <div style="background: #111827; border: 1px solid #1f2937; border-radius: 12px; overflow: hidden;">
-            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800" style="width: 100%; height: 200px; object-fit: cover;">
-            <div style="padding: 24px;">
-                <h3 style="color: #38bdf8; margin-top: 0;">Phase 2: Neutralization</h3>
-                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6;">Immediate deployment of defensive patches and autonomous firewalls.</p>
-                <a href="contact.html" style="color: #38bdf8; text-decoration: none; font-size: 0.9rem; font-weight: bold;">Learn More →</a>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800" class="card-img" alt="Neutralization">
+            <div class="card-content">
+                <span class="phase-label">Phase 02</span>
+                <h2>Neutralization</h2>
+                <p>Immediate deployment of defensive patches and autonomous firewalls.</p>
+                <a href="contact.html" class="btn-action">Learn More →</a>
             </div>
         </div>
 
-        <div style="background: #111827; border: 1px solid #1f2937; border-radius: 12px; overflow: hidden;">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" style="width: 100%; height: 200px; object-fit: cover;">
-            <div style="padding: 24px;">
-                <h3 style="color: #38bdf8; margin-top: 0;">Phase 3: Integration</h3>
-                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6;">Seamless deployment of real-time, self-healing SOC defense protocols.</p>
-                <a href="contact.html" style="color: #38bdf8; text-decoration: none; font-size: 0.9rem; font-weight: bold;">Learn More →</a>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" class="card-img" alt="Integration">
+            <div class="card-content">
+                <span class="phase-label">Phase 03</span>
+                <h2>Integration</h2>
+                <p>Seamless deployment of real-time, self-healing SOC defense protocols.</p>
+                <a href="contact.html" class="btn-action">Learn More →</a>
             </div>
         </div>
 
-        <div style="background: #111827; border: 1px solid #1f2937; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
-   <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800" style="width: 100%; height: 200px; object-fit: cover;">    <div style="padding: 24px; flex-grow: 1;">
-        <h3 style="color: #38bdf8; margin-top: 0; font-size: 1.1rem;">Phase 4: Resilience</h3>
-        <p style="color: #9ca3af; font-size: 0.85rem; line-height: 1.6;">Continuous monitoring and adaptive intelligence updates to meet evolving threats.</p>
-        <a href="contact.html" style="color: #38bdf8; text-decoration: none; font-size: 0.9rem; font-weight: bold; margin-top: 15px; display: inline-block;">Learn More →</a>
-    </div>
-</div>   
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=800" class="card-img" alt="Resilience">
+            <div class="card-content">
+                <span class="phase-label">Phase 04</span>
+                <h2>Resilience</h2>
+                <p>Continuous monitoring and adaptive intelligence updates to meet evolving threats.</p>
+                <a href="contact.html" class="btn-action">Learn More →</a>
+            </div>
+        </div>
     </main>
 
-    <footer style="padding: 60px 20px; border-top: 1px solid #1f2937; text-align: center; margin-top: 80px; color: #4b5563; font-size: 0.85rem;">
+    <footer style="padding: 60px 0; text-align: center; border-top: 1px solid #1f2937; color: #4b5563;">
         &copy; 2026 Cyberaidefenses LLC. All Rights Reserved.
     </footer>
 </body>
